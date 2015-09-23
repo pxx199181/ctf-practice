@@ -1,0 +1,1 @@
+scp -P2222 fix@pwnable.kr:/home/fix/fix /home/pxx/my_work/ctf/Rookiss/fix

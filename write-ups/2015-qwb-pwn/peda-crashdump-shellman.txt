@@ -1,0 +1,42 @@
+[m[-----------------------------START OF CRASH DUMP------------------------------][0m
+[mTimestamp: Sun Aug 30 23:10:12 2015[0m
+[mReason: [;31mInteractive dump[0m[0m
+[mExploitability: [;31mEXPLOITABLE[0m[0m
+[;34m[----------------------------------registers-----------------------------------][0m
+[m[;32mRAX[0m: 0x48 (b'H')
+[;32mRBX[0m: 0x0 
+[;32mRCX[0m: 0x0 
+[;32mRDX[0m: 0xa (b'\n')
+[;32mRSI[0m: 0x0 
+[;32mRDI[0m: [;1;35m0x19ce1c0[0m ("/bin/sh;3333333"...)
+[;32mRBP[0m: 0x0 
+[;32mRSP[0m: [;35m0x7fff2ff389d8[0m --> [;31m0x400d69[0m (mov    edi,0x401010)
+[;32mRIP[0m: 0x7f34673c7d80 
+[;32mR8 [0m: [;34m0x7f3467a9a060[0m --> [;32m0x7f3467a96d40[0m --> [;32m0x7f34678595ce[0m --> 0x2e2e00544d470043 
+[;32mR9 [0m: [;35m0x7fff2ff389b1[0m --> 0xc000000000000000 
+[;32mR10[0m: 0x3 
+[;32mR11[0m: 0x0 
+[;32mR12[0m: [;31m0x4007d0[0m (xor    ebp,ebp)
+[;32mR13[0m: [;35m0x7fff2ff38ad0[0m --> 0x1 
+[;32mR14[0m: 0x0 
+[;32mR15[0m: 0x0[0m
+[;34m[-------------------------------------code-------------------------------------][0m
+[;31mInvalid $PC address: 0x7f34673c7d80[0m
+[;34m[------------------------------------stack-------------------------------------][0m
+[m00:0000| rsp [;35m0x7fff2ff389d8[0m --> [;31m0x400d69[0m (mov    edi,0x401010)[0m
+[m01:0008|     [;35m0x7fff2ff389e0[0m --> [;31m0x4007d0[0m (xor    ebp,ebp)[0m
+[m02:0016|     [;35m0x7fff2ff389e8[0m --> [;31m0x400797[0m (jmp    0x400738)[0m
+[m03:0024|     [;35m0x7fff2ff389f0[0m --> 0x0 [0m
+[m04:0032|     [;35m0x7fff2ff389f8[0m --> [;31m0x7f34676fdec5[0m (<__libc_start_main+245>:	mov    edi,eax)[0m
+[m05:0040|     [;35m0x7fff2ff38a00[0m --> 0x0 [0m
+[m06:0048|     [;35m0x7fff2ff38a08[0m --> [;35m0x7fff2ff38ad8[0m --> [;35m0x7fff2ff3a207[0m ("./shellman")[0m
+[m07:0056|     [;35m0x7fff2ff38a10[0m --> 0x100000000 [0m
+[;34m[-----------------------backtrace (innermost 10 frames)------------------------][0m
+[m#0  0x00007f34673c7d80 in ?? ()
+#1  0x0000000000400d69 in ?? ()
+#2  0x0000000000400797 in ?? ()
+#3  0x00007f34676fdec5 in __libc_start_main (main=0x4006d0, argc=0x1, argv=0x7fff2ff38ad8, init=<optimized out>, fini=<optimized out>, rtld_fini=<optimized out>, stack_end=0x7fff2ff38ac8) at libc-start.c:287
+#4  0x00000000004007f9 in ?? ()
+[0m
+[m[------------------------------END OF CRASH DUMP-------------------------------]
+[0m

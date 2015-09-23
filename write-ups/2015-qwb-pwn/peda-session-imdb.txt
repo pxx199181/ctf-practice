@@ -1,0 +1,3 @@
+break *0x0000000000400E5F
+break *0x0000000000400F6F
+break *0x400ebb
