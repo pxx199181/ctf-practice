@@ -1,0 +1,1 @@
+def generate_format_string(begin_len, offset_n, )
