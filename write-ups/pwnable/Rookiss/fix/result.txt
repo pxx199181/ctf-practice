@@ -1,0 +1,4761 @@
+--------------
+   0:   00 c0                   add    al,al
+   2:   50                      push   eax
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   01 c0                   add    eax,eax
+   2:   50                      push   eax
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   02 c0                   add    al,al
+   2:   50                      push   eax
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   03 c0                   add    eax,eax
+   2:   50                      push   eax
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   04 c0                   add    al,0xc0
+   2:   50                      push   eax
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   05 c0 50 68 2f          add    eax,0x2f6850c0
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   06                      push   es
+   1:   c0 50 68 2f             rcl    BYTE PTR [eax+0x68],0x2f
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   07                      pop    es
+   1:   c0 50 68 2f             rcl    BYTE PTR [eax+0x68],0x2f
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   08 c0                   or     al,al
+   2:   50                      push   eax
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   09 c0                   or     eax,eax
+   2:   50                      push   eax
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   0a c0                   or     al,al
+   2:   50                      push   eax
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   0b c0                   or     eax,eax
+   2:   50                      push   eax
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   0c c0                   or     al,0xc0
+   2:   50                      push   eax
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   0d c0 50 68 2f          or     eax,0x2f6850c0
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   0e                      push   cs
+   1:   c0 50 68 2f             rcl    BYTE PTR [eax+0x68],0x2f
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   0f c0 50 68             xadd   BYTE PTR [eax+0x68],dl
+   4:   2f                      das    
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   10 c0                   adc    al,al
+   2:   50                      push   eax
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   11 c0                   adc    eax,eax
+   2:   50                      push   eax
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   12 c0                   adc    al,al
+   2:   50                      push   eax
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   13 c0                   adc    eax,eax
+   2:   50                      push   eax
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   14 c0                   adc    al,0xc0
+   2:   50                      push   eax
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   15 c0 50 68 2f          adc    eax,0x2f6850c0
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   16                      push   ss
+   1:   c0 50 68 2f             rcl    BYTE PTR [eax+0x68],0x2f
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   17                      pop    ss
+   1:   c0 50 68 2f             rcl    BYTE PTR [eax+0x68],0x2f
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   18 c0                   sbb    al,al
+   2:   50                      push   eax
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   19 c0                   sbb    eax,eax
+   2:   50                      push   eax
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   1a c0                   sbb    al,al
+   2:   50                      push   eax
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   1b c0                   sbb    eax,eax
+   2:   50                      push   eax
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   1c c0                   sbb    al,0xc0
+   2:   50                      push   eax
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   1d c0 50 68 2f          sbb    eax,0x2f6850c0
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   1e                      push   ds
+   1:   c0 50 68 2f             rcl    BYTE PTR [eax+0x68],0x2f
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   1f                      pop    ds
+   1:   c0 50 68 2f             rcl    BYTE PTR [eax+0x68],0x2f
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   20 c0                   and    al,al
+   2:   50                      push   eax
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   21 c0                   and    eax,eax
+   2:   50                      push   eax
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   22 c0                   and    al,al
+   2:   50                      push   eax
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   23 c0                   and    eax,eax
+   2:   50                      push   eax
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   24 c0                   and    al,0xc0
+   2:   50                      push   eax
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   25 c0 50 68 2f          and    eax,0x2f6850c0
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   26 c0 50 68 2f          rcl    BYTE PTR es:[eax+0x68],0x2f
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   27                      daa    
+   1:   c0 50 68 2f             rcl    BYTE PTR [eax+0x68],0x2f
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   28 c0                   sub    al,al
+   2:   50                      push   eax
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   29 c0                   sub    eax,eax
+   2:   50                      push   eax
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   2a c0                   sub    al,al
+   2:   50                      push   eax
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   2b c0                   sub    eax,eax
+   2:   50                      push   eax
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   2c c0                   sub    al,0xc0
+   2:   50                      push   eax
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   2d c0 50 68 2f          sub    eax,0x2f6850c0
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   2e c0 50 68 2f          rcl    BYTE PTR cs:[eax+0x68],0x2f
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   2f                      das    
+   1:   c0 50 68 2f             rcl    BYTE PTR [eax+0x68],0x2f
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   30 c0                   xor    al,al
+   2:   50                      push   eax
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   50                      push   eax
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   32 c0                   xor    al,al
+   2:   50                      push   eax
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   33 c0                   xor    eax,eax
+   2:   50                      push   eax
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   34 c0                   xor    al,0xc0
+   2:   50                      push   eax
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   35 c0 50 68 2f          xor    eax,0x2f6850c0
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   36 c0 50 68 2f          rcl    BYTE PTR ss:[eax+0x68],0x2f
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   37                      aaa    
+   1:   c0 50 68 2f             rcl    BYTE PTR [eax+0x68],0x2f
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   38 c0                   cmp    al,al
+   2:   50                      push   eax
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   39 c0                   cmp    eax,eax
+   2:   50                      push   eax
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   3a c0                   cmp    al,al
+   2:   50                      push   eax
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   3b c0                   cmp    eax,eax
+   2:   50                      push   eax
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   3c c0                   cmp    al,0xc0
+   2:   50                      push   eax
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   3d c0 50 68 2f          cmp    eax,0x2f6850c0
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   3e c0 50 68 2f          rcl    BYTE PTR ds:[eax+0x68],0x2f
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   3f                      aas    
+   1:   c0 50 68 2f             rcl    BYTE PTR [eax+0x68],0x2f
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   40                      inc    eax
+   1:   c0 50 68 2f             rcl    BYTE PTR [eax+0x68],0x2f
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   41                      inc    ecx
+   1:   c0 50 68 2f             rcl    BYTE PTR [eax+0x68],0x2f
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   42                      inc    edx
+   1:   c0 50 68 2f             rcl    BYTE PTR [eax+0x68],0x2f
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   43                      inc    ebx
+   1:   c0 50 68 2f             rcl    BYTE PTR [eax+0x68],0x2f
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   44                      inc    esp
+   1:   c0 50 68 2f             rcl    BYTE PTR [eax+0x68],0x2f
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   45                      inc    ebp
+   1:   c0 50 68 2f             rcl    BYTE PTR [eax+0x68],0x2f
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   46                      inc    esi
+   1:   c0 50 68 2f             rcl    BYTE PTR [eax+0x68],0x2f
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   47                      inc    edi
+   1:   c0 50 68 2f             rcl    BYTE PTR [eax+0x68],0x2f
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   48                      dec    eax
+   1:   c0 50 68 2f             rcl    BYTE PTR [eax+0x68],0x2f
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   49                      dec    ecx
+   1:   c0 50 68 2f             rcl    BYTE PTR [eax+0x68],0x2f
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   4a                      dec    edx
+   1:   c0 50 68 2f             rcl    BYTE PTR [eax+0x68],0x2f
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   4b                      dec    ebx
+   1:   c0 50 68 2f             rcl    BYTE PTR [eax+0x68],0x2f
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   4c                      dec    esp
+   1:   c0 50 68 2f             rcl    BYTE PTR [eax+0x68],0x2f
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   4d                      dec    ebp
+   1:   c0 50 68 2f             rcl    BYTE PTR [eax+0x68],0x2f
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   4e                      dec    esi
+   1:   c0 50 68 2f             rcl    BYTE PTR [eax+0x68],0x2f
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   4f                      dec    edi
+   1:   c0 50 68 2f             rcl    BYTE PTR [eax+0x68],0x2f
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   50                      push   eax
+   1:   c0 50 68 2f             rcl    BYTE PTR [eax+0x68],0x2f
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   51                      push   ecx
+   1:   c0 50 68 2f             rcl    BYTE PTR [eax+0x68],0x2f
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   52                      push   edx
+   1:   c0 50 68 2f             rcl    BYTE PTR [eax+0x68],0x2f
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   53                      push   ebx
+   1:   c0 50 68 2f             rcl    BYTE PTR [eax+0x68],0x2f
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   54                      push   esp
+   1:   c0 50 68 2f             rcl    BYTE PTR [eax+0x68],0x2f
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   55                      push   ebp
+   1:   c0 50 68 2f             rcl    BYTE PTR [eax+0x68],0x2f
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   56                      push   esi
+   1:   c0 50 68 2f             rcl    BYTE PTR [eax+0x68],0x2f
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   57                      push   edi
+   1:   c0 50 68 2f             rcl    BYTE PTR [eax+0x68],0x2f
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   58                      pop    eax
+   1:   c0 50 68 2f             rcl    BYTE PTR [eax+0x68],0x2f
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   59                      pop    ecx
+   1:   c0 50 68 2f             rcl    BYTE PTR [eax+0x68],0x2f
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   5a                      pop    edx
+   1:   c0 50 68 2f             rcl    BYTE PTR [eax+0x68],0x2f
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   5b                      pop    ebx
+   1:   c0 50 68 2f             rcl    BYTE PTR [eax+0x68],0x2f
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   5c                      pop    esp
+   1:   c0 50 68 2f             rcl    BYTE PTR [eax+0x68],0x2f
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   5d                      pop    ebp
+   1:   c0 50 68 2f             rcl    BYTE PTR [eax+0x68],0x2f
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   5e                      pop    esi
+   1:   c0 50 68 2f             rcl    BYTE PTR [eax+0x68],0x2f
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   5f                      pop    edi
+   1:   c0 50 68 2f             rcl    BYTE PTR [eax+0x68],0x2f
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   60                      pusha  
+   1:   c0 50 68 2f             rcl    BYTE PTR [eax+0x68],0x2f
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   61                      popa   
+   1:   c0 50 68 2f             rcl    BYTE PTR [eax+0x68],0x2f
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   62                      (bad)  
+   1:   c0 50 68 2f             rcl    BYTE PTR [eax+0x68],0x2f
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   63 c0                   arpl   ax,ax
+   2:   50                      push   eax
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   64 c0 50 68 2f          rcl    BYTE PTR fs:[eax+0x68],0x2f
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   65 c0 50 68 2f          rcl    BYTE PTR gs:[eax+0x68],0x2f
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   66 c0 50 68 2f          data16 rcl BYTE PTR [eax+0x68],0x2f
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   67 c0 50 68 2f          rcl    BYTE PTR [bx+si+0x68],0x2f
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   68 c0 50 68 2f          push   0x2f6850c0
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   69 c0 50 68 2f 2f       imul   eax,eax,0x2f2f6850
+   6:   73 68                   jae    0x70
+--------------
+   0:   6a c0                   push   0xffffffc0
+   2:   50                      push   eax
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   6b c0 50                imul   eax,eax,0x50
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   6c                      ins    BYTE PTR es:[edi],dx
+   1:   c0 50 68 2f             rcl    BYTE PTR [eax+0x68],0x2f
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   6d                      ins    DWORD PTR es:[edi],dx
+   1:   c0 50 68 2f             rcl    BYTE PTR [eax+0x68],0x2f
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   6e                      outs   dx,BYTE PTR ds:[esi]
+   1:   c0 50 68 2f             rcl    BYTE PTR [eax+0x68],0x2f
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   6f                      outs   dx,DWORD PTR ds:[esi]
+   1:   c0 50 68 2f             rcl    BYTE PTR [eax+0x68],0x2f
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   70 c0                   jo     0xffffffc2
+   2:   50                      push   eax
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   71 c0                   jno    0xffffffc2
+   2:   50                      push   eax
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   72 c0                   jb     0xffffffc2
+   2:   50                      push   eax
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   73 c0                   jae    0xffffffc2
+   2:   50                      push   eax
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   74 c0                   je     0xffffffc2
+   2:   50                      push   eax
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   75 c0                   jne    0xffffffc2
+   2:   50                      push   eax
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   76 c0                   jbe    0xffffffc2
+   2:   50                      push   eax
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   77 c0                   ja     0xffffffc2
+   2:   50                      push   eax
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   78 c0                   js     0xffffffc2
+   2:   50                      push   eax
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   79 c0                   jns    0xffffffc2
+   2:   50                      push   eax
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   7a c0                   jp     0xffffffc2
+   2:   50                      push   eax
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   7b c0                   jnp    0xffffffc2
+   2:   50                      push   eax
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   7c c0                   jl     0xffffffc2
+   2:   50                      push   eax
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   7d c0                   jge    0xffffffc2
+   2:   50                      push   eax
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   7e c0                   jle    0xffffffc2
+   2:   50                      push   eax
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   7f c0                   jg     0xffffffc2
+   2:   50                      push   eax
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   80 c0 50                add    al,0x50
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   81 c0 50 68 2f 2f       add    eax,0x2f2f6850
+   6:   73 68                   jae    0x70
+--------------
+   0:   82                      (bad)  
+   1:   c0 50 68 2f             rcl    BYTE PTR [eax+0x68],0x2f
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   83 c0 50                add    eax,0x50
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   84 c0                   test   al,al
+   2:   50                      push   eax
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   85 c0                   test   eax,eax
+   2:   50                      push   eax
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   86 c0                   xchg   al,al
+   2:   50                      push   eax
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   87 c0                   xchg   eax,eax
+   2:   50                      push   eax
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   88 c0                   mov    al,al
+   2:   50                      push   eax
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   89 c0                   mov    eax,eax
+   2:   50                      push   eax
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   8a c0                   mov    al,al
+   2:   50                      push   eax
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   8b c0                   mov    eax,eax
+   2:   50                      push   eax
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   8c c0                   mov    eax,es
+   2:   50                      push   eax
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   8d                      (bad)  
+   1:   c0 50 68 2f             rcl    BYTE PTR [eax+0x68],0x2f
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   8e c0                   mov    es,eax
+   2:   50                      push   eax
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   8f c0                   pop    eax
+   2:   50                      push   eax
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   90                      nop
+   1:   c0 50 68 2f             rcl    BYTE PTR [eax+0x68],0x2f
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   91                      xchg   ecx,eax
+   1:   c0 50 68 2f             rcl    BYTE PTR [eax+0x68],0x2f
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   92                      xchg   edx,eax
+   1:   c0 50 68 2f             rcl    BYTE PTR [eax+0x68],0x2f
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   93                      xchg   ebx,eax
+   1:   c0 50 68 2f             rcl    BYTE PTR [eax+0x68],0x2f
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   94                      xchg   esp,eax
+   1:   c0 50 68 2f             rcl    BYTE PTR [eax+0x68],0x2f
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   95                      xchg   ebp,eax
+   1:   c0 50 68 2f             rcl    BYTE PTR [eax+0x68],0x2f
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   96                      xchg   esi,eax
+   1:   c0 50 68 2f             rcl    BYTE PTR [eax+0x68],0x2f
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   97                      xchg   edi,eax
+   1:   c0 50 68 2f             rcl    BYTE PTR [eax+0x68],0x2f
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   98                      cwde   
+   1:   c0 50 68 2f             rcl    BYTE PTR [eax+0x68],0x2f
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   99                      cdq    
+   1:   c0 50 68 2f             rcl    BYTE PTR [eax+0x68],0x2f
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   9a c0 50 68 2f 2f 73    call   0x732f:0x2f6850c0
+   7:   68                      .byte 0x68
+--------------
+   0:   9b                      fwait
+   1:   c0 50 68 2f             rcl    BYTE PTR [eax+0x68],0x2f
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   9c                      pushf  
+   1:   c0 50 68 2f             rcl    BYTE PTR [eax+0x68],0x2f
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   9d                      popf   
+   1:   c0 50 68 2f             rcl    BYTE PTR [eax+0x68],0x2f
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   9e                      sahf   
+   1:   c0 50 68 2f             rcl    BYTE PTR [eax+0x68],0x2f
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   9f                      lahf   
+   1:   c0 50 68 2f             rcl    BYTE PTR [eax+0x68],0x2f
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   a0 c0 50 68 2f          mov    al,ds:0x2f6850c0
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   a1 c0 50 68 2f          mov    eax,ds:0x2f6850c0
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   a2 c0 50 68 2f          mov    ds:0x2f6850c0,al
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   a3 c0 50 68 2f          mov    ds:0x2f6850c0,eax
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   a4                      movs   BYTE PTR es:[edi],BYTE PTR ds:[esi]
+   1:   c0 50 68 2f             rcl    BYTE PTR [eax+0x68],0x2f
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   a5                      movs   DWORD PTR es:[edi],DWORD PTR ds:[esi]
+   1:   c0 50 68 2f             rcl    BYTE PTR [eax+0x68],0x2f
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   a6                      cmps   BYTE PTR ds:[esi],BYTE PTR es:[edi]
+   1:   c0 50 68 2f             rcl    BYTE PTR [eax+0x68],0x2f
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   a7                      cmps   DWORD PTR ds:[esi],DWORD PTR es:[edi]
+   1:   c0 50 68 2f             rcl    BYTE PTR [eax+0x68],0x2f
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   a8 c0                   test   al,0xc0
+   2:   50                      push   eax
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   a9 c0 50 68 2f          test   eax,0x2f6850c0
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   aa                      stos   BYTE PTR es:[edi],al
+   1:   c0 50 68 2f             rcl    BYTE PTR [eax+0x68],0x2f
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   ab                      stos   DWORD PTR es:[edi],eax
+   1:   c0 50 68 2f             rcl    BYTE PTR [eax+0x68],0x2f
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   ac                      lods   al,BYTE PTR ds:[esi]
+   1:   c0 50 68 2f             rcl    BYTE PTR [eax+0x68],0x2f
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   ad                      lods   eax,DWORD PTR ds:[esi]
+   1:   c0 50 68 2f             rcl    BYTE PTR [eax+0x68],0x2f
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   ae                      scas   al,BYTE PTR es:[edi]
+   1:   c0 50 68 2f             rcl    BYTE PTR [eax+0x68],0x2f
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   af                      scas   eax,DWORD PTR es:[edi]
+   1:   c0 50 68 2f             rcl    BYTE PTR [eax+0x68],0x2f
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   b0 c0                   mov    al,0xc0
+   2:   50                      push   eax
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   b1 c0                   mov    cl,0xc0
+   2:   50                      push   eax
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   b2 c0                   mov    dl,0xc0
+   2:   50                      push   eax
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   b3 c0                   mov    bl,0xc0
+   2:   50                      push   eax
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   b4 c0                   mov    ah,0xc0
+   2:   50                      push   eax
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   b5 c0                   mov    ch,0xc0
+   2:   50                      push   eax
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   b6 c0                   mov    dh,0xc0
+   2:   50                      push   eax
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   b7 c0                   mov    bh,0xc0
+   2:   50                      push   eax
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   b8 c0 50 68 2f          mov    eax,0x2f6850c0
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   b9 c0 50 68 2f          mov    ecx,0x2f6850c0
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   ba c0 50 68 2f          mov    edx,0x2f6850c0
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   bb c0 50 68 2f          mov    ebx,0x2f6850c0
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   bc c0 50 68 2f          mov    esp,0x2f6850c0
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   bd c0 50 68 2f          mov    ebp,0x2f6850c0
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   be c0 50 68 2f          mov    esi,0x2f6850c0
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   bf c0 50 68 2f          mov    edi,0x2f6850c0
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   c0 c0 50                rol    al,0x50
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   c1 c0 50                rol    eax,0x50
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   c2 c0 50                ret    0x50c0
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   c3                      ret    
+   1:   c0 50 68 2f             rcl    BYTE PTR [eax+0x68],0x2f
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   c4                      (bad)  
+   1:   c0 50 68 2f             rcl    BYTE PTR [eax+0x68],0x2f
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   c5 c0 50                (bad)  
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   c6 c0 50                mov    al,0x50
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   c7 c0 50 68 2f 2f       mov    eax,0x2f2f6850
+   6:   73 68                   jae    0x70
+--------------
+   0:   c8 c0 50 68             enter  0x50c0,0x68
+   4:   2f                      das    
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   c9                      leave  
+   1:   c0 50 68 2f             rcl    BYTE PTR [eax+0x68],0x2f
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   ca c0 50                retf   0x50c0
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   cb                      retf   
+   1:   c0 50 68 2f             rcl    BYTE PTR [eax+0x68],0x2f
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   cc                      int3   
+   1:   c0 50 68 2f             rcl    BYTE PTR [eax+0x68],0x2f
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   cd c0                   int    0xc0
+   2:   50                      push   eax
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   ce                      into   
+   1:   c0 50 68 2f             rcl    BYTE PTR [eax+0x68],0x2f
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   cf                      iret   
+   1:   c0 50 68 2f             rcl    BYTE PTR [eax+0x68],0x2f
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   d0 c0                   rol    al,1
+   2:   50                      push   eax
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   d1 c0                   rol    eax,1
+   2:   50                      push   eax
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   d2 c0                   rol    al,cl
+   2:   50                      push   eax
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   d3 c0                   rol    eax,cl
+   2:   50                      push   eax
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   d4 c0                   aam    0xc0
+   2:   50                      push   eax
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   d5 c0                   aad    0xc0
+   2:   50                      push   eax
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   d6                      (bad)  
+   1:   c0 50 68 2f             rcl    BYTE PTR [eax+0x68],0x2f
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   d7                      xlat   BYTE PTR ds:[ebx]
+   1:   c0 50 68 2f             rcl    BYTE PTR [eax+0x68],0x2f
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   d8 c0                   fadd   st,st(0)
+   2:   50                      push   eax
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   d9 c0                   fld    st(0)
+   2:   50                      push   eax
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   da c0                   fcmovb st,st(0)
+   2:   50                      push   eax
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   db c0                   fcmovnb st,st(0)
+   2:   50                      push   eax
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   dc c0                   fadd   st(0),st
+   2:   50                      push   eax
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   dd c0                   ffree  st(0)
+   2:   50                      push   eax
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   de c0                   faddp  st(0),st
+   2:   50                      push   eax
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   df c0                   ffreep st(0)
+   2:   50                      push   eax
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   e0 c0                   loopne 0xffffffc2
+   2:   50                      push   eax
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   e1 c0                   loope  0xffffffc2
+   2:   50                      push   eax
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   e2 c0                   loop   0xffffffc2
+   2:   50                      push   eax
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   e3 c0                   jecxz  0xffffffc2
+   2:   50                      push   eax
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   e4 c0                   in     al,0xc0
+   2:   50                      push   eax
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   e5 c0                   in     eax,0xc0
+   2:   50                      push   eax
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   e6 c0                   out    0xc0,al
+   2:   50                      push   eax
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   e7 c0                   out    0xc0,eax
+   2:   50                      push   eax
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   e8 c0 50 68 2f          call   0x2f6850c5
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   e9 c0 50 68 2f          jmp    0x2f6850c5
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   ea c0 50 68 2f 2f 73    jmp    0x732f:0x2f6850c0
+   7:   68                      .byte 0x68
+--------------
+   0:   eb c0                   jmp    0xffffffc2
+   2:   50                      push   eax
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   ec                      in     al,dx
+   1:   c0 50 68 2f             rcl    BYTE PTR [eax+0x68],0x2f
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   ed                      in     eax,dx
+   1:   c0 50 68 2f             rcl    BYTE PTR [eax+0x68],0x2f
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   ee                      out    dx,al
+   1:   c0 50 68 2f             rcl    BYTE PTR [eax+0x68],0x2f
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   ef                      out    dx,eax
+   1:   c0 50 68 2f             rcl    BYTE PTR [eax+0x68],0x2f
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   f0 c0 50 68 2f          lock rcl BYTE PTR [eax+0x68],0x2f
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   f1                      icebp  
+   1:   c0 50 68 2f             rcl    BYTE PTR [eax+0x68],0x2f
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   f2 c0 50 68 2f          repnz rcl BYTE PTR [eax+0x68],0x2f
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   f3 c0 50 68 2f          repz rcl BYTE PTR [eax+0x68],0x2f
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   f4                      hlt    
+   1:   c0 50 68 2f             rcl    BYTE PTR [eax+0x68],0x2f
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   f5                      cmc    
+   1:   c0 50 68 2f             rcl    BYTE PTR [eax+0x68],0x2f
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   f6 c0 50                test   al,0x50
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   f7 c0 50 68 2f 2f       test   eax,0x2f2f6850
+   6:   73 68                   jae    0x70
+--------------
+   0:   f8                      clc    
+   1:   c0 50 68 2f             rcl    BYTE PTR [eax+0x68],0x2f
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   f9                      stc    
+   1:   c0 50 68 2f             rcl    BYTE PTR [eax+0x68],0x2f
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   fa                      cli    
+   1:   c0 50 68 2f             rcl    BYTE PTR [eax+0x68],0x2f
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   fb                      sti    
+   1:   c0 50 68 2f             rcl    BYTE PTR [eax+0x68],0x2f
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   fc                      cld    
+   1:   c0 50 68 2f             rcl    BYTE PTR [eax+0x68],0x2f
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   fd                      std    
+   1:   c0 50 68 2f             rcl    BYTE PTR [eax+0x68],0x2f
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   fe c0                   inc    al
+   2:   50                      push   eax
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   ff c0                   inc    eax
+   2:   50                      push   eax
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   31 00                   xor    DWORD PTR [eax],eax
+   2:   50                      push   eax
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   31 01                   xor    DWORD PTR [ecx],eax
+   2:   50                      push   eax
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   31 02                   xor    DWORD PTR [edx],eax
+   2:   50                      push   eax
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   31 03                   xor    DWORD PTR [ebx],eax
+   2:   50                      push   eax
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   31 04 50                xor    DWORD PTR [eax+edx*2],eax
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   31 05 50 68 2f 2f       xor    DWORD PTR ds:0x2f2f6850,eax
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 06                   xor    DWORD PTR [esi],eax
+   2:   50                      push   eax
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   31 07                   xor    DWORD PTR [edi],eax
+   2:   50                      push   eax
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   31 08                   xor    DWORD PTR [eax],ecx
+   2:   50                      push   eax
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   31 09                   xor    DWORD PTR [ecx],ecx
+   2:   50                      push   eax
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   31 0a                   xor    DWORD PTR [edx],ecx
+   2:   50                      push   eax
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   31 0b                   xor    DWORD PTR [ebx],ecx
+   2:   50                      push   eax
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   31 0c 50                xor    DWORD PTR [eax+edx*2],ecx
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   31 0d 50 68 2f 2f       xor    DWORD PTR ds:0x2f2f6850,ecx
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 0e                   xor    DWORD PTR [esi],ecx
+   2:   50                      push   eax
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   31 0f                   xor    DWORD PTR [edi],ecx
+   2:   50                      push   eax
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   31 10                   xor    DWORD PTR [eax],edx
+   2:   50                      push   eax
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   31 11                   xor    DWORD PTR [ecx],edx
+   2:   50                      push   eax
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   31 12                   xor    DWORD PTR [edx],edx
+   2:   50                      push   eax
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   31 13                   xor    DWORD PTR [ebx],edx
+   2:   50                      push   eax
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   31 14 50                xor    DWORD PTR [eax+edx*2],edx
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   31 15 50 68 2f 2f       xor    DWORD PTR ds:0x2f2f6850,edx
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 16                   xor    DWORD PTR [esi],edx
+   2:   50                      push   eax
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   31 17                   xor    DWORD PTR [edi],edx
+   2:   50                      push   eax
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   31 18                   xor    DWORD PTR [eax],ebx
+   2:   50                      push   eax
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   31 19                   xor    DWORD PTR [ecx],ebx
+   2:   50                      push   eax
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   31 1a                   xor    DWORD PTR [edx],ebx
+   2:   50                      push   eax
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   31 1b                   xor    DWORD PTR [ebx],ebx
+   2:   50                      push   eax
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   31 1c 50                xor    DWORD PTR [eax+edx*2],ebx
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   31 1d 50 68 2f 2f       xor    DWORD PTR ds:0x2f2f6850,ebx
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 1e                   xor    DWORD PTR [esi],ebx
+   2:   50                      push   eax
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   31 1f                   xor    DWORD PTR [edi],ebx
+   2:   50                      push   eax
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   31 20                   xor    DWORD PTR [eax],esp
+   2:   50                      push   eax
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   31 21                   xor    DWORD PTR [ecx],esp
+   2:   50                      push   eax
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   31 22                   xor    DWORD PTR [edx],esp
+   2:   50                      push   eax
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   31 23                   xor    DWORD PTR [ebx],esp
+   2:   50                      push   eax
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   31 24 50                xor    DWORD PTR [eax+edx*2],esp
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   31 25 50 68 2f 2f       xor    DWORD PTR ds:0x2f2f6850,esp
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 26                   xor    DWORD PTR [esi],esp
+   2:   50                      push   eax
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   31 27                   xor    DWORD PTR [edi],esp
+   2:   50                      push   eax
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   31 28                   xor    DWORD PTR [eax],ebp
+   2:   50                      push   eax
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   31 29                   xor    DWORD PTR [ecx],ebp
+   2:   50                      push   eax
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   31 2a                   xor    DWORD PTR [edx],ebp
+   2:   50                      push   eax
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   31 2b                   xor    DWORD PTR [ebx],ebp
+   2:   50                      push   eax
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   31 2c 50                xor    DWORD PTR [eax+edx*2],ebp
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   31 2d 50 68 2f 2f       xor    DWORD PTR ds:0x2f2f6850,ebp
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 2e                   xor    DWORD PTR [esi],ebp
+   2:   50                      push   eax
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   31 2f                   xor    DWORD PTR [edi],ebp
+   2:   50                      push   eax
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   31 30                   xor    DWORD PTR [eax],esi
+   2:   50                      push   eax
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   31 31                   xor    DWORD PTR [ecx],esi
+   2:   50                      push   eax
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   31 32                   xor    DWORD PTR [edx],esi
+   2:   50                      push   eax
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   31 33                   xor    DWORD PTR [ebx],esi
+   2:   50                      push   eax
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   31 34 50                xor    DWORD PTR [eax+edx*2],esi
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   31 35 50 68 2f 2f       xor    DWORD PTR ds:0x2f2f6850,esi
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 36                   xor    DWORD PTR [esi],esi
+   2:   50                      push   eax
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   31 37                   xor    DWORD PTR [edi],esi
+   2:   50                      push   eax
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   31 38                   xor    DWORD PTR [eax],edi
+   2:   50                      push   eax
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   31 39                   xor    DWORD PTR [ecx],edi
+   2:   50                      push   eax
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   31 3a                   xor    DWORD PTR [edx],edi
+   2:   50                      push   eax
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   31 3b                   xor    DWORD PTR [ebx],edi
+   2:   50                      push   eax
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   31 3c 50                xor    DWORD PTR [eax+edx*2],edi
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   31 3d 50 68 2f 2f       xor    DWORD PTR ds:0x2f2f6850,edi
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 3e                   xor    DWORD PTR [esi],edi
+   2:   50                      push   eax
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   31 3f                   xor    DWORD PTR [edi],edi
+   2:   50                      push   eax
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   31 40 50                xor    DWORD PTR [eax+0x50],eax
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   31 41 50                xor    DWORD PTR [ecx+0x50],eax
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   31 42 50                xor    DWORD PTR [edx+0x50],eax
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   31 43 50                xor    DWORD PTR [ebx+0x50],eax
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   31 44 50 68             xor    DWORD PTR [eax+edx*2+0x68],eax
+   4:   2f                      das    
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 45 50                xor    DWORD PTR [ebp+0x50],eax
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   31 46 50                xor    DWORD PTR [esi+0x50],eax
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   31 47 50                xor    DWORD PTR [edi+0x50],eax
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   31 48 50                xor    DWORD PTR [eax+0x50],ecx
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   31 49 50                xor    DWORD PTR [ecx+0x50],ecx
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   31 4a 50                xor    DWORD PTR [edx+0x50],ecx
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   31 4b 50                xor    DWORD PTR [ebx+0x50],ecx
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   31 4c 50 68             xor    DWORD PTR [eax+edx*2+0x68],ecx
+   4:   2f                      das    
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 4d 50                xor    DWORD PTR [ebp+0x50],ecx
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   31 4e 50                xor    DWORD PTR [esi+0x50],ecx
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   31 4f 50                xor    DWORD PTR [edi+0x50],ecx
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   31 50 50                xor    DWORD PTR [eax+0x50],edx
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   31 51 50                xor    DWORD PTR [ecx+0x50],edx
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   31 52 50                xor    DWORD PTR [edx+0x50],edx
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   31 53 50                xor    DWORD PTR [ebx+0x50],edx
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   31 54 50 68             xor    DWORD PTR [eax+edx*2+0x68],edx
+   4:   2f                      das    
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 55 50                xor    DWORD PTR [ebp+0x50],edx
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   31 56 50                xor    DWORD PTR [esi+0x50],edx
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   31 57 50                xor    DWORD PTR [edi+0x50],edx
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   31 58 50                xor    DWORD PTR [eax+0x50],ebx
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   31 59 50                xor    DWORD PTR [ecx+0x50],ebx
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   31 5a 50                xor    DWORD PTR [edx+0x50],ebx
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   31 5b 50                xor    DWORD PTR [ebx+0x50],ebx
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   31 5c 50 68             xor    DWORD PTR [eax+edx*2+0x68],ebx
+   4:   2f                      das    
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 5d 50                xor    DWORD PTR [ebp+0x50],ebx
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   31 5e 50                xor    DWORD PTR [esi+0x50],ebx
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   31 5f 50                xor    DWORD PTR [edi+0x50],ebx
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   31 60 50                xor    DWORD PTR [eax+0x50],esp
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   31 61 50                xor    DWORD PTR [ecx+0x50],esp
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   31 62 50                xor    DWORD PTR [edx+0x50],esp
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   31 63 50                xor    DWORD PTR [ebx+0x50],esp
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   31 64 50 68             xor    DWORD PTR [eax+edx*2+0x68],esp
+   4:   2f                      das    
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 65 50                xor    DWORD PTR [ebp+0x50],esp
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   31 66 50                xor    DWORD PTR [esi+0x50],esp
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   31 67 50                xor    DWORD PTR [edi+0x50],esp
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   31 68 50                xor    DWORD PTR [eax+0x50],ebp
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   31 69 50                xor    DWORD PTR [ecx+0x50],ebp
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   31 6a 50                xor    DWORD PTR [edx+0x50],ebp
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   31 6b 50                xor    DWORD PTR [ebx+0x50],ebp
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   31 6c 50 68             xor    DWORD PTR [eax+edx*2+0x68],ebp
+   4:   2f                      das    
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 6d 50                xor    DWORD PTR [ebp+0x50],ebp
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   31 6e 50                xor    DWORD PTR [esi+0x50],ebp
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   31 6f 50                xor    DWORD PTR [edi+0x50],ebp
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   31 70 50                xor    DWORD PTR [eax+0x50],esi
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   31 71 50                xor    DWORD PTR [ecx+0x50],esi
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   31 72 50                xor    DWORD PTR [edx+0x50],esi
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   31 73 50                xor    DWORD PTR [ebx+0x50],esi
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   31 74 50 68             xor    DWORD PTR [eax+edx*2+0x68],esi
+   4:   2f                      das    
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 75 50                xor    DWORD PTR [ebp+0x50],esi
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   31 76 50                xor    DWORD PTR [esi+0x50],esi
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   31 77 50                xor    DWORD PTR [edi+0x50],esi
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   31 78 50                xor    DWORD PTR [eax+0x50],edi
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   31 79 50                xor    DWORD PTR [ecx+0x50],edi
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   31 7a 50                xor    DWORD PTR [edx+0x50],edi
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   31 7b 50                xor    DWORD PTR [ebx+0x50],edi
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   31 7c 50 68             xor    DWORD PTR [eax+edx*2+0x68],edi
+   4:   2f                      das    
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 7d 50                xor    DWORD PTR [ebp+0x50],edi
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   31 7e 50                xor    DWORD PTR [esi+0x50],edi
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   31 7f 50                xor    DWORD PTR [edi+0x50],edi
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   31 80 50 68 2f 2f       xor    DWORD PTR [eax+0x2f2f6850],eax
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 81 50 68 2f 2f       xor    DWORD PTR [ecx+0x2f2f6850],eax
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 82 50 68 2f 2f       xor    DWORD PTR [edx+0x2f2f6850],eax
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 83 50 68 2f 2f       xor    DWORD PTR [ebx+0x2f2f6850],eax
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 84 50 68 2f 2f 73    xor    DWORD PTR [eax+edx*2+0x732f2f68],eax
+   7:   68                      .byte 0x68
+--------------
+   0:   31 85 50 68 2f 2f       xor    DWORD PTR [ebp+0x2f2f6850],eax
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 86 50 68 2f 2f       xor    DWORD PTR [esi+0x2f2f6850],eax
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 87 50 68 2f 2f       xor    DWORD PTR [edi+0x2f2f6850],eax
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 88 50 68 2f 2f       xor    DWORD PTR [eax+0x2f2f6850],ecx
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 89 50 68 2f 2f       xor    DWORD PTR [ecx+0x2f2f6850],ecx
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 8a 50 68 2f 2f       xor    DWORD PTR [edx+0x2f2f6850],ecx
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 8b 50 68 2f 2f       xor    DWORD PTR [ebx+0x2f2f6850],ecx
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 8c 50 68 2f 2f 73    xor    DWORD PTR [eax+edx*2+0x732f2f68],ecx
+   7:   68                      .byte 0x68
+--------------
+   0:   31 8d 50 68 2f 2f       xor    DWORD PTR [ebp+0x2f2f6850],ecx
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 8e 50 68 2f 2f       xor    DWORD PTR [esi+0x2f2f6850],ecx
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 8f 50 68 2f 2f       xor    DWORD PTR [edi+0x2f2f6850],ecx
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 90 50 68 2f 2f       xor    DWORD PTR [eax+0x2f2f6850],edx
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 91 50 68 2f 2f       xor    DWORD PTR [ecx+0x2f2f6850],edx
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 92 50 68 2f 2f       xor    DWORD PTR [edx+0x2f2f6850],edx
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 93 50 68 2f 2f       xor    DWORD PTR [ebx+0x2f2f6850],edx
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 94 50 68 2f 2f 73    xor    DWORD PTR [eax+edx*2+0x732f2f68],edx
+   7:   68                      .byte 0x68
+--------------
+   0:   31 95 50 68 2f 2f       xor    DWORD PTR [ebp+0x2f2f6850],edx
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 96 50 68 2f 2f       xor    DWORD PTR [esi+0x2f2f6850],edx
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 97 50 68 2f 2f       xor    DWORD PTR [edi+0x2f2f6850],edx
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 98 50 68 2f 2f       xor    DWORD PTR [eax+0x2f2f6850],ebx
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 99 50 68 2f 2f       xor    DWORD PTR [ecx+0x2f2f6850],ebx
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 9a 50 68 2f 2f       xor    DWORD PTR [edx+0x2f2f6850],ebx
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 9b 50 68 2f 2f       xor    DWORD PTR [ebx+0x2f2f6850],ebx
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 9c 50 68 2f 2f 73    xor    DWORD PTR [eax+edx*2+0x732f2f68],ebx
+   7:   68                      .byte 0x68
+--------------
+   0:   31 9d 50 68 2f 2f       xor    DWORD PTR [ebp+0x2f2f6850],ebx
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 9e 50 68 2f 2f       xor    DWORD PTR [esi+0x2f2f6850],ebx
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 9f 50 68 2f 2f       xor    DWORD PTR [edi+0x2f2f6850],ebx
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 a0 50 68 2f 2f       xor    DWORD PTR [eax+0x2f2f6850],esp
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 a1 50 68 2f 2f       xor    DWORD PTR [ecx+0x2f2f6850],esp
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 a2 50 68 2f 2f       xor    DWORD PTR [edx+0x2f2f6850],esp
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 a3 50 68 2f 2f       xor    DWORD PTR [ebx+0x2f2f6850],esp
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 a4 50 68 2f 2f 73    xor    DWORD PTR [eax+edx*2+0x732f2f68],esp
+   7:   68                      .byte 0x68
+--------------
+   0:   31 a5 50 68 2f 2f       xor    DWORD PTR [ebp+0x2f2f6850],esp
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 a6 50 68 2f 2f       xor    DWORD PTR [esi+0x2f2f6850],esp
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 a7 50 68 2f 2f       xor    DWORD PTR [edi+0x2f2f6850],esp
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 a8 50 68 2f 2f       xor    DWORD PTR [eax+0x2f2f6850],ebp
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 a9 50 68 2f 2f       xor    DWORD PTR [ecx+0x2f2f6850],ebp
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 aa 50 68 2f 2f       xor    DWORD PTR [edx+0x2f2f6850],ebp
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 ab 50 68 2f 2f       xor    DWORD PTR [ebx+0x2f2f6850],ebp
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 ac 50 68 2f 2f 73    xor    DWORD PTR [eax+edx*2+0x732f2f68],ebp
+   7:   68                      .byte 0x68
+--------------
+   0:   31 ad 50 68 2f 2f       xor    DWORD PTR [ebp+0x2f2f6850],ebp
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 ae 50 68 2f 2f       xor    DWORD PTR [esi+0x2f2f6850],ebp
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 af 50 68 2f 2f       xor    DWORD PTR [edi+0x2f2f6850],ebp
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 b0 50 68 2f 2f       xor    DWORD PTR [eax+0x2f2f6850],esi
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 b1 50 68 2f 2f       xor    DWORD PTR [ecx+0x2f2f6850],esi
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 b2 50 68 2f 2f       xor    DWORD PTR [edx+0x2f2f6850],esi
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 b3 50 68 2f 2f       xor    DWORD PTR [ebx+0x2f2f6850],esi
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 b4 50 68 2f 2f 73    xor    DWORD PTR [eax+edx*2+0x732f2f68],esi
+   7:   68                      .byte 0x68
+--------------
+   0:   31 b5 50 68 2f 2f       xor    DWORD PTR [ebp+0x2f2f6850],esi
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 b6 50 68 2f 2f       xor    DWORD PTR [esi+0x2f2f6850],esi
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 b7 50 68 2f 2f       xor    DWORD PTR [edi+0x2f2f6850],esi
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 b8 50 68 2f 2f       xor    DWORD PTR [eax+0x2f2f6850],edi
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 b9 50 68 2f 2f       xor    DWORD PTR [ecx+0x2f2f6850],edi
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 ba 50 68 2f 2f       xor    DWORD PTR [edx+0x2f2f6850],edi
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 bb 50 68 2f 2f       xor    DWORD PTR [ebx+0x2f2f6850],edi
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 bc 50 68 2f 2f 73    xor    DWORD PTR [eax+edx*2+0x732f2f68],edi
+   7:   68                      .byte 0x68
+--------------
+   0:   31 bd 50 68 2f 2f       xor    DWORD PTR [ebp+0x2f2f6850],edi
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 be 50 68 2f 2f       xor    DWORD PTR [esi+0x2f2f6850],edi
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 bf 50 68 2f 2f       xor    DWORD PTR [edi+0x2f2f6850],edi
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   50                      push   eax
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   31 c1                   xor    ecx,eax
+   2:   50                      push   eax
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   31 c2                   xor    edx,eax
+   2:   50                      push   eax
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   31 c3                   xor    ebx,eax
+   2:   50                      push   eax
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   31 c4                   xor    esp,eax
+   2:   50                      push   eax
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   31 c5                   xor    ebp,eax
+   2:   50                      push   eax
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   31 c6                   xor    esi,eax
+   2:   50                      push   eax
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   31 c7                   xor    edi,eax
+   2:   50                      push   eax
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   31 c8                   xor    eax,ecx
+   2:   50                      push   eax
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   31 c9                   xor    ecx,ecx
+   2:   50                      push   eax
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   31 ca                   xor    edx,ecx
+   2:   50                      push   eax
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   31 cb                   xor    ebx,ecx
+   2:   50                      push   eax
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   31 cc                   xor    esp,ecx
+   2:   50                      push   eax
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   31 cd                   xor    ebp,ecx
+   2:   50                      push   eax
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   31 ce                   xor    esi,ecx
+   2:   50                      push   eax
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   31 cf                   xor    edi,ecx
+   2:   50                      push   eax
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   31 d0                   xor    eax,edx
+   2:   50                      push   eax
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   31 d1                   xor    ecx,edx
+   2:   50                      push   eax
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   31 d2                   xor    edx,edx
+   2:   50                      push   eax
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   31 d3                   xor    ebx,edx
+   2:   50                      push   eax
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   31 d4                   xor    esp,edx
+   2:   50                      push   eax
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   31 d5                   xor    ebp,edx
+   2:   50                      push   eax
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   31 d6                   xor    esi,edx
+   2:   50                      push   eax
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   31 d7                   xor    edi,edx
+   2:   50                      push   eax
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   31 d8                   xor    eax,ebx
+   2:   50                      push   eax
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   31 d9                   xor    ecx,ebx
+   2:   50                      push   eax
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   31 da                   xor    edx,ebx
+   2:   50                      push   eax
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   31 db                   xor    ebx,ebx
+   2:   50                      push   eax
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   31 dc                   xor    esp,ebx
+   2:   50                      push   eax
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   31 dd                   xor    ebp,ebx
+   2:   50                      push   eax
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   31 de                   xor    esi,ebx
+   2:   50                      push   eax
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   31 df                   xor    edi,ebx
+   2:   50                      push   eax
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   31 e0                   xor    eax,esp
+   2:   50                      push   eax
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   31 e1                   xor    ecx,esp
+   2:   50                      push   eax
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   31 e2                   xor    edx,esp
+   2:   50                      push   eax
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   31 e3                   xor    ebx,esp
+   2:   50                      push   eax
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   31 e4                   xor    esp,esp
+   2:   50                      push   eax
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   31 e5                   xor    ebp,esp
+   2:   50                      push   eax
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   31 e6                   xor    esi,esp
+   2:   50                      push   eax
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   31 e7                   xor    edi,esp
+   2:   50                      push   eax
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   31 e8                   xor    eax,ebp
+   2:   50                      push   eax
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   31 e9                   xor    ecx,ebp
+   2:   50                      push   eax
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   31 ea                   xor    edx,ebp
+   2:   50                      push   eax
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   31 eb                   xor    ebx,ebp
+   2:   50                      push   eax
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   31 ec                   xor    esp,ebp
+   2:   50                      push   eax
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   31 ed                   xor    ebp,ebp
+   2:   50                      push   eax
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   31 ee                   xor    esi,ebp
+   2:   50                      push   eax
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   31 ef                   xor    edi,ebp
+   2:   50                      push   eax
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   31 f0                   xor    eax,esi
+   2:   50                      push   eax
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   31 f1                   xor    ecx,esi
+   2:   50                      push   eax
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   31 f2                   xor    edx,esi
+   2:   50                      push   eax
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   31 f3                   xor    ebx,esi
+   2:   50                      push   eax
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   31 f4                   xor    esp,esi
+   2:   50                      push   eax
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   31 f5                   xor    ebp,esi
+   2:   50                      push   eax
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   31 f6                   xor    esi,esi
+   2:   50                      push   eax
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   31 f7                   xor    edi,esi
+   2:   50                      push   eax
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   31 f8                   xor    eax,edi
+   2:   50                      push   eax
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   31 f9                   xor    ecx,edi
+   2:   50                      push   eax
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   31 fa                   xor    edx,edi
+   2:   50                      push   eax
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   31 fb                   xor    ebx,edi
+   2:   50                      push   eax
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   31 fc                   xor    esp,edi
+   2:   50                      push   eax
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   31 fd                   xor    ebp,edi
+   2:   50                      push   eax
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   31 fe                   xor    esi,edi
+   2:   50                      push   eax
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   31 ff                   xor    edi,edi
+   2:   50                      push   eax
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   00 68 2f                add    BYTE PTR [eax+0x2f],ch
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   01 68 2f                add    DWORD PTR [eax+0x2f],ebp
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   02 68 2f                add    ch,BYTE PTR [eax+0x2f]
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   03 68 2f                add    ebp,DWORD PTR [eax+0x2f]
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   04 68                   add    al,0x68
+   4:   2f                      das    
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   05 68 2f 2f 73          add    eax,0x732f2f68
+   7:   68                      .byte 0x68
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   06                      push   es
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   07                      pop    es
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   08 68 2f                or     BYTE PTR [eax+0x2f],ch
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   09 68 2f                or     DWORD PTR [eax+0x2f],ebp
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   0a 68 2f                or     ch,BYTE PTR [eax+0x2f]
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   0b 68 2f                or     ebp,DWORD PTR [eax+0x2f]
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   0c 68                   or     al,0x68
+   4:   2f                      das    
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   0d 68 2f 2f 73          or     eax,0x732f2f68
+   7:   68                      .byte 0x68
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   0e                      push   cs
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   0f 68 2f                punpckhbw mm5,QWORD PTR [edi]
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   10 68 2f                adc    BYTE PTR [eax+0x2f],ch
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   11 68 2f                adc    DWORD PTR [eax+0x2f],ebp
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   12 68 2f                adc    ch,BYTE PTR [eax+0x2f]
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   13 68 2f                adc    ebp,DWORD PTR [eax+0x2f]
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   14 68                   adc    al,0x68
+   4:   2f                      das    
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   15 68 2f 2f 73          adc    eax,0x732f2f68
+   7:   68                      .byte 0x68
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   16                      push   ss
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   17                      pop    ss
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   18 68 2f                sbb    BYTE PTR [eax+0x2f],ch
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   19 68 2f                sbb    DWORD PTR [eax+0x2f],ebp
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   1a 68 2f                sbb    ch,BYTE PTR [eax+0x2f]
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   1b 68 2f                sbb    ebp,DWORD PTR [eax+0x2f]
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   1c 68                   sbb    al,0x68
+   4:   2f                      das    
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   1d 68 2f 2f 73          sbb    eax,0x732f2f68
+   7:   68                      .byte 0x68
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   1e                      push   ds
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   1f                      pop    ds
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   20 68 2f                and    BYTE PTR [eax+0x2f],ch
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   21 68 2f                and    DWORD PTR [eax+0x2f],ebp
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   22 68 2f                and    ch,BYTE PTR [eax+0x2f]
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   23 68 2f                and    ebp,DWORD PTR [eax+0x2f]
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   24 68                   and    al,0x68
+   4:   2f                      das    
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   25 68 2f 2f 73          and    eax,0x732f2f68
+   7:   68                      .byte 0x68
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   26 68 2f 2f 73 68       es push 0x68732f2f
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   27                      daa    
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   28 68 2f                sub    BYTE PTR [eax+0x2f],ch
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   29 68 2f                sub    DWORD PTR [eax+0x2f],ebp
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   2a 68 2f                sub    ch,BYTE PTR [eax+0x2f]
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   2b 68 2f                sub    ebp,DWORD PTR [eax+0x2f]
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   2c 68                   sub    al,0x68
+   4:   2f                      das    
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   2d 68 2f 2f 73          sub    eax,0x732f2f68
+   7:   68                      .byte 0x68
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   2e 68 2f 2f 73 68       cs push 0x68732f2f
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   2f                      das    
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   30 68 2f                xor    BYTE PTR [eax+0x2f],ch
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   31 68 2f                xor    DWORD PTR [eax+0x2f],ebp
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   32 68 2f                xor    ch,BYTE PTR [eax+0x2f]
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   33 68 2f                xor    ebp,DWORD PTR [eax+0x2f]
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   34 68                   xor    al,0x68
+   4:   2f                      das    
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   35 68 2f 2f 73          xor    eax,0x732f2f68
+   7:   68                      .byte 0x68
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   36 68 2f 2f 73 68       ss push 0x68732f2f
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   37                      aaa    
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   38 68 2f                cmp    BYTE PTR [eax+0x2f],ch
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   39 68 2f                cmp    DWORD PTR [eax+0x2f],ebp
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   3a 68 2f                cmp    ch,BYTE PTR [eax+0x2f]
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   3b 68 2f                cmp    ebp,DWORD PTR [eax+0x2f]
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   3c 68                   cmp    al,0x68
+   4:   2f                      das    
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   3d 68 2f 2f 73          cmp    eax,0x732f2f68
+   7:   68                      .byte 0x68
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   3e 68 2f 2f 73 68       ds push 0x68732f2f
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   3f                      aas    
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   40                      inc    eax
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   41                      inc    ecx
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   42                      inc    edx
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   43                      inc    ebx
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   44                      inc    esp
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   45                      inc    ebp
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   46                      inc    esi
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   47                      inc    edi
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   48                      dec    eax
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   49                      dec    ecx
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   4a                      dec    edx
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   4b                      dec    ebx
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   4c                      dec    esp
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   4d                      dec    ebp
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   4e                      dec    esi
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   4f                      dec    edi
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   50                      push   eax
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   51                      push   ecx
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   52                      push   edx
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   53                      push   ebx
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   54                      push   esp
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   55                      push   ebp
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   56                      push   esi
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   57                      push   edi
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   58                      pop    eax
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   59                      pop    ecx
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   5a                      pop    edx
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   5b                      pop    ebx
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   5c                      pop    esp
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   5d                      pop    ebp
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   5e                      pop    esi
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   5f                      pop    edi
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   60                      pusha  
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   61                      popa   
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   62 68 2f                bound  ebp,QWORD PTR [eax+0x2f]
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   63 68 2f                arpl   WORD PTR [eax+0x2f],bp
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   64 68 2f 2f 73 68       fs push 0x68732f2f
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   65 68 2f 2f 73 68       gs push 0x68732f2f
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   66 68 2f 2f             pushw  0x2f2f
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   67 68 2f 2f 73 68       addr16 push 0x68732f2f
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   68 68 2f 2f 73          push   0x732f2f68
+   7:   68                      .byte 0x68
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   69                      .byte 0x69
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   6a 68                   push   0x68
+   4:   2f                      das    
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   6b 68 2f 2f             imul   ebp,DWORD PTR [eax+0x2f],0x2f
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   6c                      ins    BYTE PTR es:[edi],dx
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   6d                      ins    DWORD PTR es:[edi],dx
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   6e                      outs   dx,BYTE PTR ds:[esi]
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   6f                      outs   dx,DWORD PTR ds:[esi]
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   70 68                   jo     0x6c
+   4:   2f                      das    
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   71 68                   jno    0x6c
+   4:   2f                      das    
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   72 68                   jb     0x6c
+   4:   2f                      das    
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   73 68                   jae    0x6c
+   4:   2f                      das    
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   74 68                   je     0x6c
+   4:   2f                      das    
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   75 68                   jne    0x6c
+   4:   2f                      das    
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   76 68                   jbe    0x6c
+   4:   2f                      das    
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   77 68                   ja     0x6c
+   4:   2f                      das    
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   78 68                   js     0x6c
+   4:   2f                      das    
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   79 68                   jns    0x6c
+   4:   2f                      das    
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   7a 68                   jp     0x6c
+   4:   2f                      das    
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   7b 68                   jnp    0x6c
+   4:   2f                      das    
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   7c 68                   jl     0x6c
+   4:   2f                      das    
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   7d 68                   jge    0x6c
+   4:   2f                      das    
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   7e 68                   jle    0x6c
+   4:   2f                      das    
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   7f 68                   jg     0x6c
+   4:   2f                      das    
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   80 68 2f 2f             sub    BYTE PTR [eax+0x2f],0x2f
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   81                      .byte 0x81
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   82                      (bad)  
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   83 68 2f 2f             sub    DWORD PTR [eax+0x2f],0x2f
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   84 68 2f                test   BYTE PTR [eax+0x2f],ch
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   85 68 2f                test   DWORD PTR [eax+0x2f],ebp
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   86 68 2f                xchg   BYTE PTR [eax+0x2f],ch
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   87 68 2f                xchg   DWORD PTR [eax+0x2f],ebp
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   88 68 2f                mov    BYTE PTR [eax+0x2f],ch
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   89 68 2f                mov    DWORD PTR [eax+0x2f],ebp
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   8a 68 2f                mov    ch,BYTE PTR [eax+0x2f]
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   8b 68 2f                mov    ebp,DWORD PTR [eax+0x2f]
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   8c 68 2f                mov    WORD PTR [eax+0x2f],gs
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   8d 68 2f                lea    ebp,[eax+0x2f]
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   8e 68 2f                mov    gs,WORD PTR [eax+0x2f]
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   8f 68                   (bad)  
+   4:   2f                      das    
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   90                      nop
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   91                      xchg   ecx,eax
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   92                      xchg   edx,eax
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   93                      xchg   ebx,eax
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   94                      xchg   esp,eax
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   95                      xchg   ebp,eax
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   96                      xchg   esi,eax
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   97                      xchg   edi,eax
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   98                      cwde   
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   99                      cdq    
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   9a                      .byte 0x9a
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   9b                      fwait
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   9c                      pushf  
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   9d                      popf   
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   9e                      sahf   
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   9f                      lahf   
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   a0 68 2f 2f 73          mov    al,ds:0x732f2f68
+   7:   68                      .byte 0x68
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   a1 68 2f 2f 73          mov    eax,ds:0x732f2f68
+   7:   68                      .byte 0x68
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   a2 68 2f 2f 73          mov    ds:0x732f2f68,al
+   7:   68                      .byte 0x68
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   a3 68 2f 2f 73          mov    ds:0x732f2f68,eax
+   7:   68                      .byte 0x68
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   a4                      movs   BYTE PTR es:[edi],BYTE PTR ds:[esi]
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   a5                      movs   DWORD PTR es:[edi],DWORD PTR ds:[esi]
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   a6                      cmps   BYTE PTR ds:[esi],BYTE PTR es:[edi]
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   a7                      cmps   DWORD PTR ds:[esi],DWORD PTR es:[edi]
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   a8 68                   test   al,0x68
+   4:   2f                      das    
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   a9 68 2f 2f 73          test   eax,0x732f2f68
+   7:   68                      .byte 0x68
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   aa                      stos   BYTE PTR es:[edi],al
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   ab                      stos   DWORD PTR es:[edi],eax
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   ac                      lods   al,BYTE PTR ds:[esi]
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   ad                      lods   eax,DWORD PTR ds:[esi]
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   ae                      scas   al,BYTE PTR es:[edi]
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   af                      scas   eax,DWORD PTR es:[edi]
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   b0 68                   mov    al,0x68
+   4:   2f                      das    
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   b1 68                   mov    cl,0x68
+   4:   2f                      das    
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   b2 68                   mov    dl,0x68
+   4:   2f                      das    
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   b3 68                   mov    bl,0x68
+   4:   2f                      das    
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   b4 68                   mov    ah,0x68
+   4:   2f                      das    
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   b5 68                   mov    ch,0x68
+   4:   2f                      das    
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   b6 68                   mov    dh,0x68
+   4:   2f                      das    
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   b7 68                   mov    bh,0x68
+   4:   2f                      das    
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   b8 68 2f 2f 73          mov    eax,0x732f2f68
+   7:   68                      .byte 0x68
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   b9 68 2f 2f 73          mov    ecx,0x732f2f68
+   7:   68                      .byte 0x68
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   ba 68 2f 2f 73          mov    edx,0x732f2f68
+   7:   68                      .byte 0x68
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   bb 68 2f 2f 73          mov    ebx,0x732f2f68
+   7:   68                      .byte 0x68
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   bc 68 2f 2f 73          mov    esp,0x732f2f68
+   7:   68                      .byte 0x68
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   bd 68 2f 2f 73          mov    ebp,0x732f2f68
+   7:   68                      .byte 0x68
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   be 68 2f 2f 73          mov    esi,0x732f2f68
+   7:   68                      .byte 0x68
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   bf 68 2f 2f 73          mov    edi,0x732f2f68
+   7:   68                      .byte 0x68
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   c0 68 2f 2f             shr    BYTE PTR [eax+0x2f],0x2f
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   c1 68 2f 2f             shr    DWORD PTR [eax+0x2f],0x2f
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   c2 68 2f                ret    0x2f68
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   c3                      ret    
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   c4 68 2f                les    ebp,FWORD PTR [eax+0x2f]
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   c5 68 2f                lds    ebp,FWORD PTR [eax+0x2f]
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   c6                      (bad)  
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   c7                      (bad)  
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   c8 68 2f 2f             enter  0x2f68,0x2f
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   c9                      leave  
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   ca 68 2f                retf   0x2f68
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   cb                      retf   
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   cc                      int3   
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   cd 68                   int    0x68
+   4:   2f                      das    
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   ce                      into   
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   cf                      iret   
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   d0 68 2f                shr    BYTE PTR [eax+0x2f],1
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   d1 68 2f                shr    DWORD PTR [eax+0x2f],1
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   d2 68 2f                shr    BYTE PTR [eax+0x2f],cl
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   d3 68 2f                shr    DWORD PTR [eax+0x2f],cl
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   d4 68                   aam    0x68
+   4:   2f                      das    
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   d5 68                   aad    0x68
+   4:   2f                      das    
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   d6                      (bad)  
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   d7                      xlat   BYTE PTR ds:[ebx]
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   d8 68 2f                fsubr  DWORD PTR [eax+0x2f]
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   d9 68 2f                fldcw  WORD PTR [eax+0x2f]
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   da 68 2f                fisubr DWORD PTR [eax+0x2f]
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   db 68 2f                fld    TBYTE PTR [eax+0x2f]
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   dc 68 2f                fsubr  QWORD PTR [eax+0x2f]
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   dd 68 2f                (bad)  [eax+0x2f]
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   de 68 2f                fisubr WORD PTR [eax+0x2f]
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   df 68 2f                fild   QWORD PTR [eax+0x2f]
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   e0 68                   loopne 0x6c
+   4:   2f                      das    
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   e1 68                   loope  0x6c
+   4:   2f                      das    
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   e2 68                   loop   0x6c
+   4:   2f                      das    
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   e3 68                   jecxz  0x6c
+   4:   2f                      das    
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   e4 68                   in     al,0x68
+   4:   2f                      das    
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   e5 68                   in     eax,0x68
+   4:   2f                      das    
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   e6 68                   out    0x68,al
+   4:   2f                      das    
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   e7 68                   out    0x68,eax
+   4:   2f                      das    
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   e8 68 2f 2f 73          call   0x732f2f6f
+   7:   68                      .byte 0x68
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   e9 68 2f 2f 73          jmp    0x732f2f6f
+   7:   68                      .byte 0x68
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   ea                      .byte 0xea
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   eb 68                   jmp    0x6c
+   4:   2f                      das    
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   ec                      in     al,dx
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   ed                      in     eax,dx
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   ee                      out    dx,al
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   ef                      out    dx,eax
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   f0 68 2f 2f 73 68       lock push 0x68732f2f
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   f1                      icebp  
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   f2 68 2f 2f 73 68       repnz push 0x68732f2f
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   f3 68 2f 2f 73 68       repz push 0x68732f2f
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   f4                      hlt    
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   f5                      cmc    
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   f6 68 2f                imul   BYTE PTR [eax+0x2f]
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   f7 68 2f                imul   DWORD PTR [eax+0x2f]
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   f8                      clc    
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   f9                      stc    
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   fa                      cli    
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   fb                      sti    
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   fc                      cld    
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   fd                      std    
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   fe                      (bad)  
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   ff 68 2f                jmp    FWORD PTR [eax+0x2f]
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   50                      push   eax
+   3:   00 2f                   add    BYTE PTR [edi],ch
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   50                      push   eax
+   3:   01 2f                   add    DWORD PTR [edi],ebp
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   50                      push   eax
+   3:   02 2f                   add    ch,BYTE PTR [edi]
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   50                      push   eax
+   3:   03 2f                   add    ebp,DWORD PTR [edi]
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   50                      push   eax
+   3:   04 2f                   add    al,0x2f
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   50                      push   eax
+   3:   05 2f 2f 73 68          add    eax,0x68732f2f
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   50                      push   eax
+   3:   06                      push   es
+   4:   2f                      das    
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   50                      push   eax
+   3:   07                      pop    es
+   4:   2f                      das    
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   50                      push   eax
+   3:   08 2f                   or     BYTE PTR [edi],ch
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   50                      push   eax
+   3:   09 2f                   or     DWORD PTR [edi],ebp
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   50                      push   eax
+   3:   0a 2f                   or     ch,BYTE PTR [edi]
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   50                      push   eax
+   3:   0b 2f                   or     ebp,DWORD PTR [edi]
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   50                      push   eax
+   3:   0c 2f                   or     al,0x2f
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   50                      push   eax
+   3:   0d 2f 2f 73 68          or     eax,0x68732f2f
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   50                      push   eax
+   3:   0e                      push   cs
+   4:   2f                      das    
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   50                      push   eax
+   3:   0f 2f 2f                comiss xmm5,DWORD PTR [edi]
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   50                      push   eax
+   3:   10 2f                   adc    BYTE PTR [edi],ch
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   50                      push   eax
+   3:   11 2f                   adc    DWORD PTR [edi],ebp
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   50                      push   eax
+   3:   12 2f                   adc    ch,BYTE PTR [edi]
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   50                      push   eax
+   3:   13 2f                   adc    ebp,DWORD PTR [edi]
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   50                      push   eax
+   3:   14 2f                   adc    al,0x2f
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   50                      push   eax
+   3:   15 2f 2f 73 68          adc    eax,0x68732f2f
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   50                      push   eax
+   3:   16                      push   ss
+   4:   2f                      das    
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   50                      push   eax
+   3:   17                      pop    ss
+   4:   2f                      das    
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   50                      push   eax
+   3:   18 2f                   sbb    BYTE PTR [edi],ch
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   50                      push   eax
+   3:   19 2f                   sbb    DWORD PTR [edi],ebp
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   50                      push   eax
+   3:   1a 2f                   sbb    ch,BYTE PTR [edi]
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   50                      push   eax
+   3:   1b 2f                   sbb    ebp,DWORD PTR [edi]
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   50                      push   eax
+   3:   1c 2f                   sbb    al,0x2f
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   50                      push   eax
+   3:   1d 2f 2f 73 68          sbb    eax,0x68732f2f
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   50                      push   eax
+   3:   1e                      push   ds
+   4:   2f                      das    
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   50                      push   eax
+   3:   1f                      pop    ds
+   4:   2f                      das    
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   50                      push   eax
+   3:   20 2f                   and    BYTE PTR [edi],ch
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   50                      push   eax
+   3:   21 2f                   and    DWORD PTR [edi],ebp
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   50                      push   eax
+   3:   22 2f                   and    ch,BYTE PTR [edi]
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   50                      push   eax
+   3:   23 2f                   and    ebp,DWORD PTR [edi]
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   50                      push   eax
+   3:   24 2f                   and    al,0x2f
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   50                      push   eax
+   3:   25 2f 2f 73 68          and    eax,0x68732f2f
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   50                      push   eax
+   3:   26 2f                   es das 
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   50                      push   eax
+   3:   27                      daa    
+   4:   2f                      das    
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   50                      push   eax
+   3:   28 2f                   sub    BYTE PTR [edi],ch
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   50                      push   eax
+   3:   29 2f                   sub    DWORD PTR [edi],ebp
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   50                      push   eax
+   3:   2a 2f                   sub    ch,BYTE PTR [edi]
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   50                      push   eax
+   3:   2b 2f                   sub    ebp,DWORD PTR [edi]
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   50                      push   eax
+   3:   2c 2f                   sub    al,0x2f
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   50                      push   eax
+   3:   2d 2f 2f 73 68          sub    eax,0x68732f2f
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   50                      push   eax
+   3:   2e 2f                   cs das 
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   50                      push   eax
+   3:   2f                      das    
+   4:   2f                      das    
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   50                      push   eax
+   3:   30 2f                   xor    BYTE PTR [edi],ch
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   50                      push   eax
+   3:   31 2f                   xor    DWORD PTR [edi],ebp
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   50                      push   eax
+   3:   32 2f                   xor    ch,BYTE PTR [edi]
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   50                      push   eax
+   3:   33 2f                   xor    ebp,DWORD PTR [edi]
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   50                      push   eax
+   3:   34 2f                   xor    al,0x2f
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   50                      push   eax
+   3:   35 2f 2f 73 68          xor    eax,0x68732f2f
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   50                      push   eax
+   3:   36 2f                   ss das 
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   50                      push   eax
+   3:   37                      aaa    
+   4:   2f                      das    
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   50                      push   eax
+   3:   38 2f                   cmp    BYTE PTR [edi],ch
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   50                      push   eax
+   3:   39 2f                   cmp    DWORD PTR [edi],ebp
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   50                      push   eax
+   3:   3a 2f                   cmp    ch,BYTE PTR [edi]
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   50                      push   eax
+   3:   3b 2f                   cmp    ebp,DWORD PTR [edi]
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   50                      push   eax
+   3:   3c 2f                   cmp    al,0x2f
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   50                      push   eax
+   3:   3d 2f 2f 73 68          cmp    eax,0x68732f2f
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   50                      push   eax
+   3:   3e 2f                   ds das 
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   50                      push   eax
+   3:   3f                      aas    
+   4:   2f                      das    
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   50                      push   eax
+   3:   40                      inc    eax
+   4:   2f                      das    
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   50                      push   eax
+   3:   41                      inc    ecx
+   4:   2f                      das    
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   50                      push   eax
+   3:   42                      inc    edx
+   4:   2f                      das    
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   50                      push   eax
+   3:   43                      inc    ebx
+   4:   2f                      das    
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   50                      push   eax
+   3:   44                      inc    esp
+   4:   2f                      das    
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   50                      push   eax
+   3:   45                      inc    ebp
+   4:   2f                      das    
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   50                      push   eax
+   3:   46                      inc    esi
+   4:   2f                      das    
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   50                      push   eax
+   3:   47                      inc    edi
+   4:   2f                      das    
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   50                      push   eax
+   3:   48                      dec    eax
+   4:   2f                      das    
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   50                      push   eax
+   3:   49                      dec    ecx
+   4:   2f                      das    
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   50                      push   eax
+   3:   4a                      dec    edx
+   4:   2f                      das    
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   50                      push   eax
+   3:   4b                      dec    ebx
+   4:   2f                      das    
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   50                      push   eax
+   3:   4c                      dec    esp
+   4:   2f                      das    
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   50                      push   eax
+   3:   4d                      dec    ebp
+   4:   2f                      das    
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   50                      push   eax
+   3:   4e                      dec    esi
+   4:   2f                      das    
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   50                      push   eax
+   3:   4f                      dec    edi
+   4:   2f                      das    
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   50                      push   eax
+   3:   50                      push   eax
+   4:   2f                      das    
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   50                      push   eax
+   3:   51                      push   ecx
+   4:   2f                      das    
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   50                      push   eax
+   3:   52                      push   edx
+   4:   2f                      das    
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   50                      push   eax
+   3:   53                      push   ebx
+   4:   2f                      das    
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   50                      push   eax
+   3:   54                      push   esp
+   4:   2f                      das    
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   50                      push   eax
+   3:   55                      push   ebp
+   4:   2f                      das    
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   50                      push   eax
+   3:   56                      push   esi
+   4:   2f                      das    
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   50                      push   eax
+   3:   57                      push   edi
+   4:   2f                      das    
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   50                      push   eax
+   3:   58                      pop    eax
+   4:   2f                      das    
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   50                      push   eax
+   3:   59                      pop    ecx
+   4:   2f                      das    
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   50                      push   eax
+   3:   5a                      pop    edx
+   4:   2f                      das    
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   50                      push   eax
+   3:   5b                      pop    ebx
+   4:   2f                      das    
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   50                      push   eax
+   3:   5c                      pop    esp
+   4:   2f                      das    
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   50                      push   eax
+   3:   5d                      pop    ebp
+   4:   2f                      das    
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   50                      push   eax
+   3:   5e                      pop    esi
+   4:   2f                      das    
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   50                      push   eax
+   3:   5f                      pop    edi
+   4:   2f                      das    
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   50                      push   eax
+   3:   60                      pusha  
+   4:   2f                      das    
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   50                      push   eax
+   3:   61                      popa   
+   4:   2f                      das    
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   50                      push   eax
+   3:   62 2f                   bound  ebp,QWORD PTR [edi]
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   50                      push   eax
+   3:   63 2f                   arpl   WORD PTR [edi],bp
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   50                      push   eax
+   3:   64 2f                   fs das 
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   50                      push   eax
+   3:   65 2f                   gs das 
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   50                      push   eax
+   3:   66 2f                   data16 das 
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   50                      push   eax
+   3:   67 2f                   addr16 das 
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   50                      push   eax
+   3:   68 2f 2f 73 68          push   0x68732f2f
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   50                      push   eax
+   3:   69                      .byte 0x69
+   4:   2f                      das    
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   50                      push   eax
+   3:   6a 2f                   push   0x2f
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   50                      push   eax
+   3:   6b 2f 2f                imul   ebp,DWORD PTR [edi],0x2f
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   50                      push   eax
+   3:   6c                      ins    BYTE PTR es:[edi],dx
+   4:   2f                      das    
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   50                      push   eax
+   3:   6d                      ins    DWORD PTR es:[edi],dx
+   4:   2f                      das    
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   50                      push   eax
+   3:   6e                      outs   dx,BYTE PTR ds:[esi]
+   4:   2f                      das    
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   50                      push   eax
+   3:   6f                      outs   dx,DWORD PTR ds:[esi]
+   4:   2f                      das    
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   50                      push   eax
+   3:   70 2f                   jo     0x34
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   50                      push   eax
+   3:   71 2f                   jno    0x34
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   50                      push   eax
+   3:   72 2f                   jb     0x34
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   50                      push   eax
+   3:   73 2f                   jae    0x34
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   50                      push   eax
+   3:   74 2f                   je     0x34
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   50                      push   eax
+   3:   75 2f                   jne    0x34
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   50                      push   eax
+   3:   76 2f                   jbe    0x34
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   50                      push   eax
+   3:   77 2f                   ja     0x34
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   50                      push   eax
+   3:   78 2f                   js     0x34
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   50                      push   eax
+   3:   79 2f                   jns    0x34
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   50                      push   eax
+   3:   7a 2f                   jp     0x34
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   50                      push   eax
+   3:   7b 2f                   jnp    0x34
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   50                      push   eax
+   3:   7c 2f                   jl     0x34
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   50                      push   eax
+   3:   7d 2f                   jge    0x34
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   50                      push   eax
+   3:   7e 2f                   jle    0x34
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   50                      push   eax
+   3:   7f 2f                   jg     0x34
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   50                      push   eax
+   3:   80 2f 2f                sub    BYTE PTR [edi],0x2f
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   50                      push   eax
+   3:   81                      .byte 0x81
+   4:   2f                      das    
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   50                      push   eax
+   3:   82                      (bad)  
+   4:   2f                      das    
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   50                      push   eax
+   3:   83 2f 2f                sub    DWORD PTR [edi],0x2f
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   50                      push   eax
+   3:   84 2f                   test   BYTE PTR [edi],ch
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   50                      push   eax
+   3:   85 2f                   test   DWORD PTR [edi],ebp
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   50                      push   eax
+   3:   86 2f                   xchg   BYTE PTR [edi],ch
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   50                      push   eax
+   3:   87 2f                   xchg   DWORD PTR [edi],ebp
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   50                      push   eax
+   3:   88 2f                   mov    BYTE PTR [edi],ch
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   50                      push   eax
+   3:   89 2f                   mov    DWORD PTR [edi],ebp
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   50                      push   eax
+   3:   8a 2f                   mov    ch,BYTE PTR [edi]
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   50                      push   eax
+   3:   8b 2f                   mov    ebp,DWORD PTR [edi]
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   50                      push   eax
+   3:   8c 2f                   mov    WORD PTR [edi],gs
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   50                      push   eax
+   3:   8d 2f                   lea    ebp,[edi]
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   50                      push   eax
+   3:   8e 2f                   mov    gs,WORD PTR [edi]
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   50                      push   eax
+   3:   8f                      (bad)  
+   4:   2f                      das    
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   50                      push   eax
+   3:   90                      nop
+   4:   2f                      das    
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   50                      push   eax
+   3:   91                      xchg   ecx,eax
+   4:   2f                      das    
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   50                      push   eax
+   3:   92                      xchg   edx,eax
+   4:   2f                      das    
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   50                      push   eax
+   3:   93                      xchg   ebx,eax
+   4:   2f                      das    
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   50                      push   eax
+   3:   94                      xchg   esp,eax
+   4:   2f                      das    
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   50                      push   eax
+   3:   95                      xchg   ebp,eax
+   4:   2f                      das    
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   50                      push   eax
+   3:   96                      xchg   esi,eax
+   4:   2f                      das    
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   50                      push   eax
+   3:   97                      xchg   edi,eax
+   4:   2f                      das    
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   50                      push   eax
+   3:   98                      cwde   
+   4:   2f                      das    
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   50                      push   eax
+   3:   99                      cdq    
+   4:   2f                      das    
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   50                      push   eax
+   3:   9a                      .byte 0x9a
+   4:   2f                      das    
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   50                      push   eax
+   3:   9b                      fwait
+   4:   2f                      das    
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   50                      push   eax
+   3:   9c                      pushf  
+   4:   2f                      das    
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   50                      push   eax
+   3:   9d                      popf   
+   4:   2f                      das    
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   50                      push   eax
+   3:   9e                      sahf   
+   4:   2f                      das    
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   50                      push   eax
+   3:   9f                      lahf   
+   4:   2f                      das    
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   50                      push   eax
+   3:   a0 2f 2f 73 68          mov    al,ds:0x68732f2f
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   50                      push   eax
+   3:   a1 2f 2f 73 68          mov    eax,ds:0x68732f2f
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   50                      push   eax
+   3:   a2 2f 2f 73 68          mov    ds:0x68732f2f,al
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   50                      push   eax
+   3:   a3 2f 2f 73 68          mov    ds:0x68732f2f,eax
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   50                      push   eax
+   3:   a4                      movs   BYTE PTR es:[edi],BYTE PTR ds:[esi]
+   4:   2f                      das    
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   50                      push   eax
+   3:   a5                      movs   DWORD PTR es:[edi],DWORD PTR ds:[esi]
+   4:   2f                      das    
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   50                      push   eax
+   3:   a6                      cmps   BYTE PTR ds:[esi],BYTE PTR es:[edi]
+   4:   2f                      das    
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   50                      push   eax
+   3:   a7                      cmps   DWORD PTR ds:[esi],DWORD PTR es:[edi]
+   4:   2f                      das    
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   50                      push   eax
+   3:   a8 2f                   test   al,0x2f
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   50                      push   eax
+   3:   a9 2f 2f 73 68          test   eax,0x68732f2f
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   50                      push   eax
+   3:   aa                      stos   BYTE PTR es:[edi],al
+   4:   2f                      das    
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   50                      push   eax
+   3:   ab                      stos   DWORD PTR es:[edi],eax
+   4:   2f                      das    
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   50                      push   eax
+   3:   ac                      lods   al,BYTE PTR ds:[esi]
+   4:   2f                      das    
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   50                      push   eax
+   3:   ad                      lods   eax,DWORD PTR ds:[esi]
+   4:   2f                      das    
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   50                      push   eax
+   3:   ae                      scas   al,BYTE PTR es:[edi]
+   4:   2f                      das    
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   50                      push   eax
+   3:   af                      scas   eax,DWORD PTR es:[edi]
+   4:   2f                      das    
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   50                      push   eax
+   3:   b0 2f                   mov    al,0x2f
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   50                      push   eax
+   3:   b1 2f                   mov    cl,0x2f
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   50                      push   eax
+   3:   b2 2f                   mov    dl,0x2f
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   50                      push   eax
+   3:   b3 2f                   mov    bl,0x2f
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   50                      push   eax
+   3:   b4 2f                   mov    ah,0x2f
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   50                      push   eax
+   3:   b5 2f                   mov    ch,0x2f
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   50                      push   eax
+   3:   b6 2f                   mov    dh,0x2f
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   50                      push   eax
+   3:   b7 2f                   mov    bh,0x2f
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   50                      push   eax
+   3:   b8 2f 2f 73 68          mov    eax,0x68732f2f
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   50                      push   eax
+   3:   b9 2f 2f 73 68          mov    ecx,0x68732f2f
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   50                      push   eax
+   3:   ba 2f 2f 73 68          mov    edx,0x68732f2f
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   50                      push   eax
+   3:   bb 2f 2f 73 68          mov    ebx,0x68732f2f
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   50                      push   eax
+   3:   bc 2f 2f 73 68          mov    esp,0x68732f2f
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   50                      push   eax
+   3:   bd 2f 2f 73 68          mov    ebp,0x68732f2f
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   50                      push   eax
+   3:   be 2f 2f 73 68          mov    esi,0x68732f2f
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   50                      push   eax
+   3:   bf 2f 2f 73 68          mov    edi,0x68732f2f
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   50                      push   eax
+   3:   c0 2f 2f                shr    BYTE PTR [edi],0x2f
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   50                      push   eax
+   3:   c1 2f 2f                shr    DWORD PTR [edi],0x2f
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   50                      push   eax
+   3:   c2 2f 2f                ret    0x2f2f
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   50                      push   eax
+   3:   c3                      ret    
+   4:   2f                      das    
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   50                      push   eax
+   3:   c4 2f                   les    ebp,FWORD PTR [edi]
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   50                      push   eax
+   3:   c5 2f                   lds    ebp,FWORD PTR [edi]
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   50                      push   eax
+   3:   c6                      (bad)  
+   4:   2f                      das    
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   50                      push   eax
+   3:   c7                      (bad)  
+   4:   2f                      das    
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   50                      push   eax
+   3:   c8 2f 2f 73             enter  0x2f2f,0x73
+   7:   68                      .byte 0x68
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   50                      push   eax
+   3:   c9                      leave  
+   4:   2f                      das    
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   50                      push   eax
+   3:   ca 2f 2f                retf   0x2f2f
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   50                      push   eax
+   3:   cb                      retf   
+   4:   2f                      das    
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   50                      push   eax
+   3:   cc                      int3   
+   4:   2f                      das    
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   50                      push   eax
+   3:   cd 2f                   int    0x2f
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   50                      push   eax
+   3:   ce                      into   
+   4:   2f                      das    
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   50                      push   eax
+   3:   cf                      iret   
+   4:   2f                      das    
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   50                      push   eax
+   3:   d0 2f                   shr    BYTE PTR [edi],1
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   50                      push   eax
+   3:   d1 2f                   shr    DWORD PTR [edi],1
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   50                      push   eax
+   3:   d2 2f                   shr    BYTE PTR [edi],cl
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   50                      push   eax
+   3:   d3 2f                   shr    DWORD PTR [edi],cl
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   50                      push   eax
+   3:   d4 2f                   aam    0x2f
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   50                      push   eax
+   3:   d5 2f                   aad    0x2f
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   50                      push   eax
+   3:   d6                      (bad)  
+   4:   2f                      das    
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   50                      push   eax
+   3:   d7                      xlat   BYTE PTR ds:[ebx]
+   4:   2f                      das    
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   50                      push   eax
+   3:   d8 2f                   fsubr  DWORD PTR [edi]
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   50                      push   eax
+   3:   d9 2f                   fldcw  WORD PTR [edi]
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   50                      push   eax
+   3:   da 2f                   fisubr DWORD PTR [edi]
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   50                      push   eax
+   3:   db 2f                   fld    TBYTE PTR [edi]
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   50                      push   eax
+   3:   dc 2f                   fsubr  QWORD PTR [edi]
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   50                      push   eax
+   3:   dd 2f                   (bad)  [edi]
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   50                      push   eax
+   3:   de 2f                   fisubr WORD PTR [edi]
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   50                      push   eax
+   3:   df 2f                   fild   QWORD PTR [edi]
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   50                      push   eax
+   3:   e0 2f                   loopne 0x34
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   50                      push   eax
+   3:   e1 2f                   loope  0x34
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   50                      push   eax
+   3:   e2 2f                   loop   0x34
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   50                      push   eax
+   3:   e3 2f                   jecxz  0x34
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   50                      push   eax
+   3:   e4 2f                   in     al,0x2f
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   50                      push   eax
+   3:   e5 2f                   in     eax,0x2f
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   50                      push   eax
+   3:   e6 2f                   out    0x2f,al
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   50                      push   eax
+   3:   e7 2f                   out    0x2f,eax
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   50                      push   eax
+   3:   e8 2f 2f 73 68          call   0x68732f37
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   50                      push   eax
+   3:   e9 2f 2f 73 68          jmp    0x68732f37
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   50                      push   eax
+   3:   ea                      .byte 0xea
+   4:   2f                      das    
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   50                      push   eax
+   3:   eb 2f                   jmp    0x34
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   50                      push   eax
+   3:   ec                      in     al,dx
+   4:   2f                      das    
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   50                      push   eax
+   3:   ed                      in     eax,dx
+   4:   2f                      das    
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   50                      push   eax
+   3:   ee                      out    dx,al
+   4:   2f                      das    
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   50                      push   eax
+   3:   ef                      out    dx,eax
+   4:   2f                      das    
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   50                      push   eax
+   3:   f0 2f                   lock das 
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   50                      push   eax
+   3:   f1                      icebp  
+   4:   2f                      das    
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   50                      push   eax
+   3:   f2 2f                   repnz das 
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   50                      push   eax
+   3:   f3 2f                   repz das 
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   50                      push   eax
+   3:   f4                      hlt    
+   4:   2f                      das    
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   50                      push   eax
+   3:   f5                      cmc    
+   4:   2f                      das    
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   50                      push   eax
+   3:   f6 2f                   imul   BYTE PTR [edi]
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   50                      push   eax
+   3:   f7 2f                   imul   DWORD PTR [edi]
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   50                      push   eax
+   3:   f8                      clc    
+   4:   2f                      das    
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   50                      push   eax
+   3:   f9                      stc    
+   4:   2f                      das    
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   50                      push   eax
+   3:   fa                      cli    
+   4:   2f                      das    
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   50                      push   eax
+   3:   fb                      sti    
+   4:   2f                      das    
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   50                      push   eax
+   3:   fc                      cld    
+   4:   2f                      das    
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   50                      push   eax
+   3:   fd                      std    
+   4:   2f                      das    
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   50                      push   eax
+   3:   fe                      (bad)  
+   4:   2f                      das    
+   5:   2f                      das    
+   6:   73 68                   jae    0x70
+--------------
+   0:   31 c0                   xor    eax,eax
+   2:   50                      push   eax
+   3:   ff 2f                   jmp    FWORD PTR [edi]
+   5:   2f                      das    
+   6:   73 68                   jae    0x70

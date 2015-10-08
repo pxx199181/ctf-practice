@@ -1,0 +1,1 @@
+scp -P 2222 mistake@pwnable.kr:/home/mistake/mistake.c /home/pxx/program/pwnable/9-mistake

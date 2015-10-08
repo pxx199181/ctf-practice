@@ -1,0 +1,1 @@
+scp -P 2222 ascii_easy@pwnable.kr:/home/ascii_easy/ascii_easy /home/pxx/program/pwnable/Rookiss/5-ascii_easy/

@@ -1,0 +1,3 @@
+break *main
+break *0x08049425
+break *0x0804940A

